@@ -1,3 +1,6 @@
+@font-face {
+  font-family: 'Proxima nova';
+  src: url("../fonts/proxima nova.ttf"); }
 * {
   margin: 0;
   padding: 0; }
@@ -32,11 +35,13 @@ header {
     text-align: center;
     z-index: 999; }
     header .menu-bottom h3 {
-      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-family: "Proxima nova", sans-serif;
       font-weight: bold;
-      color: white;
+      color: #fafafa;
       padding: 35px 0 0 0;
-      font-size: 1.7em; }
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase; }
     header .menu-bottom i {
       color: #c4aa74;
       margin: 20px;
@@ -50,17 +55,89 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100; }
-    header .menu .menu-img {
-      display: inline-block;
-      width: 40vw;
-      height: 100vh;
-      background: url("../media/menu-img.jpg") center;
-      background-size: cover; }
+    z-index: 100;
+    background: url("../media/menu-img.jpg") left;
+    background-size: cover;
+    display: none; }
     header .menu .menu-item {
-      display: inline-block;
-      background: #1d3137;
-      width: 60vw;
+      float: right;
+      background: rgba(29, 49, 55, 0.95);
+      width: 65vw;
       height: 100vh; }
+
+.link-item {
+  display: inline-block;
+  padding: 20vh 135px; }
+  .link-item a {
+    display: block;
+    width: auto;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Proxima nova", sans-serif;
+    font-weight: bold;
+    color: #fafafa;
+    margin: 20px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+  .link-item .sub-link {
+    font-family: "Poiret One", cursive;
+    font-weight: 400;
+    padding-left: 20px;
+    margin: 10px 0; }
+  .link-item a:hover {
+    color: #c4aa74;
+    transition: .2s; }
+
+.ico-item {
+  display: inline-block;
+  height: 40vh;
+  width: 66px;
+  vertical-align: top;
+  position: fixed;
+  right: 60px;
+  margin: 30vh 0; }
+  .ico-item a {
+    display: block;
+    text-decoration: none;
+    color: #fafafa;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 8vh; }
+  .ico-item a:hover {
+    color: #c4aa74;
+    transition: .2s; }
+
+.info-div {
+  padding-top: 100px; }
+  .info-div .info-div-img {
+    position: relative;
+    display: inline-block;
+    float: right;
+    height: 650px;
+    width: 70%;
+    background: url("../media/info-div-img.jpg") center;
+    background-size: cover; }
+  .info-div .info-div-text {
+    position: absolute;
+    width: 550px;
+    height: 70%;
+    background-color: #fafafa;
+    left: -20%;
+    bottom: 15%; }
+    .info-div .info-div-text h1 {
+      font-size: 3.375rem;
+      letter-spacing: 8px;
+      font-family: "Proxima nova", sans-serif;
+      text-transform: uppercase;
+      padding: 110px 100px 0 100px;
+      color: #1e3e48;
+      font-weight: bold;
+      text-shadow: 1px 1px 0 #1e3e48;
+      line-height: 110%; }
+    .info-div .info-div-text h3 {
+      font-size: 1.5em;
+      font-family: "Poiret One", cursive;
+      color: #7a838c;
+      padding: 30px 100px; }
 
 /*# sourceMappingURL=main.css.map */
