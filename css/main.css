@@ -1,3 +1,66 @@
+* {
+  margin: 0;
+  padding: 0; }
 
+body {
+  background: #fafafa; }
+
+.container {
+  width: 70vw;
+  margin: 0 auto; }
+
+header {
+  position: relative;
+  padding: 0 20px; }
+  header .logo-ico {
+    font-size: 3rem;
+    padding: 20px;
+    color: #c4aa74;
+    font-family: "Monotype Corsiva", sans-serif;
+    position: absolute;
+    z-index: 999; }
+    header .logo-ico h3 {
+      display: inline-block;
+      margin: 0; }
+  header .menu-bottom {
+    position: absolute;
+    right: 60px;
+    top: 0;
+    height: 120px;
+    width: 66px;
+    background-color: #1e3e48;
+    text-align: center;
+    z-index: 999; }
+    header .menu-bottom h3 {
+      font-family: "Yanone Kaffeesatz", sans-serif;
+      font-weight: bold;
+      color: white;
+      padding: 35px 0 0 0;
+      font-size: 1.7em; }
+    header .menu-bottom i {
+      color: #c4aa74;
+      margin: 20px;
+      font-size: 1.7em; }
+  header .menu-bottom:hover i {
+    transform: rotate(90deg);
+    transition: .2s; }
+  header .menu {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; }
+    header .menu .menu-img {
+      display: inline-block;
+      width: 40vw;
+      height: 100vh;
+      background: url("../media/menu-img.jpg") center;
+      background-size: cover; }
+    header .menu .menu-item {
+      display: inline-block;
+      background: #1d3137;
+      width: 60vw;
+      height: 100vh; }
 
 /*# sourceMappingURL=main.css.map */
