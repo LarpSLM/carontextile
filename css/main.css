@@ -26,6 +26,8 @@ header {
     header .logo-ico h3 {
       display: inline-block;
       margin: 0; }
+  header .logo-ico.active {
+    position: fixed; }
   header .menu-bottom {
     position: fixed;
     right: 60px;
@@ -47,8 +49,10 @@ header {
     header .menu-bottom i {
       color: #c4aa74;
       margin: 20px;
-      font-size: 1.7em; }
+      font-size: 1.7em;
+      transition: .2s; }
   header .menu-bottom:hover i {
+    color: #fafafa;
     transform: rotate(90deg);
     transition: .2s; }
   header .menu {
@@ -64,7 +68,7 @@ header {
       display: inline-block;
       width: 35vw;
       height: 100%;
-      background: url("../media/menu-img.jpg");
+      background: url("../media/menu-img.jpg") center;
       background-size: cover; }
     header .menu .menu-item {
       float: right;
@@ -74,7 +78,7 @@ header {
 
 .link-item {
   display: inline-block;
-  padding: 20vh 135px; }
+  padding: 20vh 10vw; }
   .link-item a {
     display: block;
     width: auto;
@@ -175,7 +179,8 @@ header {
       margin-top: 150px; }
     .menu-promo .brand-description p {
       font-size: 1.5rem;
-      font-family: "Proxima nova", sans-serif;
+      font-family: "Poiret One", cursive;
+      font-weight: bold;
       color: #c4aa74;
       margin-top: 20px;
       width: 80%; }
@@ -197,8 +202,7 @@ header {
   height: 400px;
   position: relative;
   background-color: #7a838c;
-  margin-left: 30vw;
-  background-size: cover; }
+  margin-left: 30vw; }
   .item-one .item-one-name,
   .item-one .item-two-name,
   .item-one .item-three-name,
@@ -376,19 +380,24 @@ header {
   transition: .3s; }
 
 .item-one {
-  background: url("../media/item-one.jpg") center; }
+  background: url("../media/item-one.jpg") center;
+  background-size: cover; }
 
 .item-two {
-  background: url("../media/item-two.jpg") center; }
+  background: url("../media/item-two.jpg") center;
+  background-size: cover; }
 
 .item-three {
-  background: url("../media/item-three.jpg") center; }
+  background: url("../media/item-three.jpg") center;
+  background-size: cover; }
 
 .item-four {
-  background: url("../media/item-four.jpg") center; }
+  background: url("../media/item-four.jpg") center;
+  background-size: cover; }
 
 .item-five {
-  background: url("../media/item-five.jpg") center; }
+  background: url("../media/item-five.jpg") center;
+  background-size: cover; }
 
 .info-bottom {
   width: 100%;
@@ -439,20 +448,25 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #fafafa;
-    width: 1170px;
+    max-width: 1170px;
+    width: 100%;
     margin: 0 auto;
     height: 250px; }
-  footer .footer-left,
-  footer .footer-right {
-    display: inline-block;
-    width: 40%; }
+  footer .footer-top,
+  footer .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between; }
   footer .footer-left-top,
   footer .footer-right-top {
-    width: 100%;
-    padding: 40px 60px;
+    display: inline-block;
+    width: 40%;
+    padding: 40px calc(20px + 1vw);
     box-sizing: border-box;
     height: 150px;
-    border-bottom: 4px solid #c4aa74; }
+    border-bottom: 4px solid #c4aa74;
+    vertical-align: top; }
     footer .footer-left-top a,
     footer .footer-right-top a {
       display: block;
@@ -470,12 +484,12 @@ footer {
       text-decoration: none;
       font-size: 2.5rem;
       color: #1e3e48;
-      margin-left: 40px; }
+      margin-left: calc(20px + 1vw); }
   footer .footer-left-bottom,
   footer .footer-right-bottom {
     display: inline-block;
-    width: 100%;
-    padding: 20px 60px;
+    width: 40%;
+    padding: 0 calc(20px + 1vw);
     box-sizing: border-box; }
     footer .footer-left-bottom p,
     footer .footer-right-bottom p {
@@ -493,10 +507,9 @@ footer {
     font-family: "Monotype Corsiva", sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
-    margin-top: 100px; }
+    margin-top: 50px; }
     footer .footer-center i {
-      font-size: 90px;
-      padding-bottom: 10px; }
+      font-size: 90px; }
 
 .catalogue {
   width: 100%;
@@ -504,6 +517,7 @@ footer {
   background: url("../media/pattern-left.svg") top right/300px no-repeat; }
   .catalogue .catalogue-title {
     max-width: 1170px;
+    width: 100%;
     margin: 0 auto; }
     .catalogue .catalogue-title h1 {
       font-size: 3.375rem;
@@ -659,5 +673,408 @@ footer {
   width: 100%;
   height: 100px;
   background-color: #1d3137; }
+
+@media screen and (max-width: 415px) {
+  header .logo-ico {
+    font-size: 2.2rem;
+    padding: 20px; }
+  header .menu-bottom {
+    right: 0;
+    height: auto; }
+    header .menu-bottom h3 {
+      display: none; }
+  header .menu-bottom:hover i {
+    color: #c4aa74;
+    transform: rotate(0deg); }
+  header .menu .menu-img {
+    width: 0; }
+  header .menu .menu-item {
+    width: 100vw; }
+    header .menu .menu-item a {
+      font-size: 1.25rem; }
+    header .menu .menu-item .ico-item {
+      right: 0; }
+
+  main .info-div {
+    padding: 87px 0 100px;
+    height: 300px; }
+    main .info-div .info-div-img {
+      height: 235px;
+      width: calc(100% - 40px); }
+      main .info-div .info-div-img .info-div-text {
+        width: 80%;
+        margin-top: 195px;
+        margin-left: 10%;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        left: 0;
+        bottom: auto; }
+        main .info-div .info-div-img .info-div-text h1 {
+          font-size: 1.5rem;
+          letter-spacing: 4px;
+          padding: 0; }
+        main .info-div .info-div-img .info-div-text h3 {
+          font-size: 1.15rem;
+          padding: 0;
+          margin-top: 10px; }
+  main .menu-promo {
+    background: #1d3137 url(../media/pattern-left.svg) top left -160px/210px repeat-y; }
+    main .menu-promo .brand-description {
+      width: 80%;
+      margin-left: 20vw;
+      height: 315px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; }
+      main .menu-promo .brand-description h4 {
+        font-size: 1.5rem;
+        margin-top: 0; }
+      main .menu-promo .brand-description p {
+        font-size: 1.25rem;
+        width: 100%;
+        margin-top: 0; }
+    main .menu-promo .menu-section {
+      width: calc(100% - 40px);
+      padding: 15px 0; }
+      main .menu-promo .menu-section .item-one,
+      main .menu-promo .menu-section .item-two,
+      main .menu-promo .menu-section .item-three,
+      main .menu-promo .menu-section .item-four,
+      main .menu-promo .menu-section .item-five {
+        width: 90%;
+        height: 176px;
+        margin-left: 15vw; }
+      main .menu-promo .menu-section .item-one-name,
+      main .menu-promo .menu-section .item-two-name,
+      main .menu-promo .menu-section .item-three-name,
+      main .menu-promo .menu-section .item-four-name,
+      main .menu-promo .menu-section .item-five-name {
+        width: 85%;
+        height: 90px;
+        left: -15%;
+        padding: 0;
+        margin: 0;
+        bottom: 0; }
+        main .menu-promo .menu-section .item-one-name .left,
+        main .menu-promo .menu-section .item-two-name .left,
+        main .menu-promo .menu-section .item-three-name .left,
+        main .menu-promo .menu-section .item-four-name .left,
+        main .menu-promo .menu-section .item-five-name .left {
+          width: 90%;
+          padding: 10px;
+          box-sizing: border-box; }
+        main .menu-promo .menu-section .item-one-name .right,
+        main .menu-promo .menu-section .item-two-name .right,
+        main .menu-promo .menu-section .item-three-name .right,
+        main .menu-promo .menu-section .item-four-name .right,
+        main .menu-promo .menu-section .item-five-name .right {
+          width: 10%;
+          text-align: left;
+          font-size: 1.125rem; }
+        main .menu-promo .menu-section .item-one-name h4,
+        main .menu-promo .menu-section .item-two-name h4,
+        main .menu-promo .menu-section .item-three-name h4,
+        main .menu-promo .menu-section .item-four-name h4,
+        main .menu-promo .menu-section .item-five-name h4 {
+          font-size: 1.125rem;
+          letter-spacing: 4px; }
+        main .menu-promo .menu-section .item-one-name p,
+        main .menu-promo .menu-section .item-two-name p,
+        main .menu-promo .menu-section .item-three-name p,
+        main .menu-promo .menu-section .item-four-name p,
+        main .menu-promo .menu-section .item-five-name p {
+          font-size: 1em;
+          margin-top: 5px; }
+  main .info-bottom {
+    height: auto;
+    padding: 0; }
+    main .info-bottom a {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      height: auto; }
+      main .info-bottom a i {
+        font-size: 2.5em;
+        margin-bottom: 10px; }
+      main .info-bottom a h4 {
+        font-size: 1.25rem; }
+      main .info-bottom a p {
+        font-size: 1.125em; }
+    main .info-bottom .info-bottom-border {
+      border-top: 4px solid #7a838c;
+      border-bottom: 4px solid #7a838c;
+      border-left: none;
+      border-right: none; }
+
+  footer .footer-all {
+    width: calc(100% - 40px);
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+    height: auto; }
+    footer .footer-all .footer-left-top,
+    footer .footer-all .footer-right-top,
+    footer .footer-all .footer-left-bottom,
+    footer .footer-all .footer-right-bottom {
+      display: block;
+      width: 100%;
+      padding: 20px 0 0 0;
+      text-align: center;
+      height: auto;
+      border-bottom: none; }
+      footer .footer-all .footer-left-top a,
+      footer .footer-all .footer-right-top a,
+      footer .footer-all .footer-left-bottom a,
+      footer .footer-all .footer-right-bottom a {
+        font-size: 1.25rem;
+        margin: 0 20px; }
+      footer .footer-all .footer-left-top p,
+      footer .footer-all .footer-right-top p,
+      footer .footer-all .footer-left-bottom p,
+      footer .footer-all .footer-right-bottom p {
+        font-size: 1rem; }
+    footer .footer-all .footer-center {
+      order: 5;
+      display: block;
+      width: 100%; }
+      footer .footer-all .footer-center i {
+        font-size: 3rem; }
+      footer .footer-all .footer-center h4 {
+        font-size: 1rem; } }
+@media (min-width: 415px) and (max-width: 760px) {
+  header .logo-ico {
+    font-size: 2.2rem;
+    padding: 20px; }
+  header .menu-bottom {
+    right: 0;
+    height: auto; }
+    header .menu-bottom h3 {
+      display: none; }
+  header .menu-bottom:hover i {
+    color: #c4aa74;
+    transform: rotate(0deg); }
+  header .menu .menu-img {
+    width: 0; }
+  header .menu .menu-item {
+    width: 100vw; }
+    header .menu .menu-item a {
+      font-size: 1.25rem; }
+    header .menu .menu-item .ico-item {
+      right: 0; }
+
+  main .info-div {
+    padding: 87px 0 100px;
+    height: 300px; }
+    main .info-div .info-div-img {
+      height: 235px;
+      width: calc(100% - 40px); }
+      main .info-div .info-div-img .info-div-text {
+        width: 80%;
+        margin-top: 195px;
+        margin-left: 10%;
+        padding: 40px 20px;
+        box-sizing: border-box;
+        left: 0;
+        bottom: auto; }
+        main .info-div .info-div-img .info-div-text h1 {
+          font-size: 1.5rem;
+          letter-spacing: 4px;
+          padding: 0; }
+        main .info-div .info-div-img .info-div-text h3 {
+          font-size: 1.15rem;
+          padding: 0;
+          margin-top: 10px; }
+  main .menu-promo {
+    background: #1d3137 url(../media/pattern-left.svg) top left -160px/210px repeat-y; }
+    main .menu-promo .brand-description {
+      width: 80%;
+      margin-left: 20vw;
+      height: 315px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center; }
+      main .menu-promo .brand-description h4 {
+        font-size: 1.5rem;
+        margin-top: 0; }
+      main .menu-promo .brand-description p {
+        font-size: 1.25rem;
+        width: 100%;
+        margin-top: 0; }
+    main .menu-promo .menu-section {
+      width: calc(100% - 40px);
+      padding: 15px 0; }
+      main .menu-promo .menu-section .item-one,
+      main .menu-promo .menu-section .item-two,
+      main .menu-promo .menu-section .item-three,
+      main .menu-promo .menu-section .item-four,
+      main .menu-promo .menu-section .item-five {
+        width: 90%;
+        height: 176px;
+        margin-left: 15vw; }
+      main .menu-promo .menu-section .item-one-name,
+      main .menu-promo .menu-section .item-two-name,
+      main .menu-promo .menu-section .item-three-name,
+      main .menu-promo .menu-section .item-four-name,
+      main .menu-promo .menu-section .item-five-name {
+        width: 85%;
+        height: 90px;
+        left: -15%;
+        padding: 0;
+        margin: 0;
+        bottom: 0; }
+        main .menu-promo .menu-section .item-one-name .left,
+        main .menu-promo .menu-section .item-two-name .left,
+        main .menu-promo .menu-section .item-three-name .left,
+        main .menu-promo .menu-section .item-four-name .left,
+        main .menu-promo .menu-section .item-five-name .left {
+          width: 90%;
+          padding: 10px;
+          box-sizing: border-box; }
+        main .menu-promo .menu-section .item-one-name .right,
+        main .menu-promo .menu-section .item-two-name .right,
+        main .menu-promo .menu-section .item-three-name .right,
+        main .menu-promo .menu-section .item-four-name .right,
+        main .menu-promo .menu-section .item-five-name .right {
+          width: 10%;
+          text-align: left;
+          font-size: 1.125rem; }
+        main .menu-promo .menu-section .item-one-name h4,
+        main .menu-promo .menu-section .item-two-name h4,
+        main .menu-promo .menu-section .item-three-name h4,
+        main .menu-promo .menu-section .item-four-name h4,
+        main .menu-promo .menu-section .item-five-name h4 {
+          font-size: 1.125rem;
+          letter-spacing: 4px; }
+        main .menu-promo .menu-section .item-one-name p,
+        main .menu-promo .menu-section .item-two-name p,
+        main .menu-promo .menu-section .item-three-name p,
+        main .menu-promo .menu-section .item-four-name p,
+        main .menu-promo .menu-section .item-five-name p {
+          font-size: 1em;
+          margin-top: 5px; }
+  main .info-bottom {
+    height: auto;
+    padding: 0; }
+    main .info-bottom a {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      height: auto; }
+      main .info-bottom a i {
+        font-size: 2.5em;
+        margin-bottom: 10px; }
+      main .info-bottom a h4 {
+        font-size: 1.25rem; }
+      main .info-bottom a p {
+        font-size: 1.125em; }
+    main .info-bottom .info-bottom-border {
+      border-top: 4px solid #7a838c;
+      border-bottom: 4px solid #7a838c;
+      border-left: none;
+      border-right: none; }
+
+  footer .footer-all {
+    width: calc(100% - 40px);
+    padding: 0 0 20px 0;
+    box-sizing: border-box;
+    height: auto; }
+    footer .footer-all .footer-left-top,
+    footer .footer-all .footer-right-top,
+    footer .footer-all .footer-left-bottom,
+    footer .footer-all .footer-right-bottom {
+      display: block;
+      width: 100%;
+      padding: 20px 0 0 0;
+      text-align: center;
+      height: auto;
+      border-bottom: none; }
+      footer .footer-all .footer-left-top a,
+      footer .footer-all .footer-right-top a,
+      footer .footer-all .footer-left-bottom a,
+      footer .footer-all .footer-right-bottom a {
+        font-size: 1.25rem;
+        margin: 0 20px; }
+      footer .footer-all .footer-left-top p,
+      footer .footer-all .footer-right-top p,
+      footer .footer-all .footer-left-bottom p,
+      footer .footer-all .footer-right-bottom p {
+        font-size: 1rem; }
+    footer .footer-all .footer-center {
+      order: 5;
+      display: block;
+      width: 100%; }
+      footer .footer-all .footer-center i {
+        font-size: 3rem; }
+      footer .footer-all .footer-center h4 {
+        font-size: 1rem; } }
+@media (min-width: 761px) and (max-width: 1023px) {
+  header .logo-ico {
+    font-size: 2.2rem;
+    padding: 20px; }
+  header .menu-bottom {
+    right: 30px; }
+  header .menu-bottom:hover i {
+    color: #c4aa74;
+    transform: rotate(0deg); }
+  header .menu .menu-item a {
+    font-size: 1.25rem; }
+  header .menu .menu-item .ico-item {
+    right: 30px; }
+
+  main .info-div {
+    height: 550px; }
+  main .menu-promo {
+    background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y; }
+    main .menu-promo .menu-section {
+      width: calc(100% - 40px);
+      padding: 15px 0; }
+      main .menu-promo .menu-section .item-one,
+      main .menu-promo .menu-section .item-two,
+      main .menu-promo .menu-section .item-three,
+      main .menu-promo .menu-section .item-four,
+      main .menu-promo .menu-section .item-five {
+        width: 90%;
+        height: 176px;
+        margin-left: 15vw; }
+      main .menu-promo .menu-section .item-one-name,
+      main .menu-promo .menu-section .item-two-name,
+      main .menu-promo .menu-section .item-three-name,
+      main .menu-promo .menu-section .item-four-name,
+      main .menu-promo .menu-section .item-five-name {
+        width: 85%;
+        height: 90px;
+        left: -15%;
+        padding: 0;
+        margin: 0;
+        bottom: 0; }
+        main .menu-promo .menu-section .item-one-name .left,
+        main .menu-promo .menu-section .item-two-name .left,
+        main .menu-promo .menu-section .item-three-name .left,
+        main .menu-promo .menu-section .item-four-name .left,
+        main .menu-promo .menu-section .item-five-name .left {
+          width: 90%;
+          padding: 10px;
+          box-sizing: border-box; }
+        main .menu-promo .menu-section .item-one-name .right,
+        main .menu-promo .menu-section .item-two-name .right,
+        main .menu-promo .menu-section .item-three-name .right,
+        main .menu-promo .menu-section .item-four-name .right,
+        main .menu-promo .menu-section .item-five-name .right {
+          width: 10%;
+          text-align: left;
+          font-size: 1.125rem; }
+        main .menu-promo .menu-section .item-one-name h4,
+        main .menu-promo .menu-section .item-two-name h4,
+        main .menu-promo .menu-section .item-three-name h4,
+        main .menu-promo .menu-section .item-four-name h4,
+        main .menu-promo .menu-section .item-five-name h4 {
+          font-size: 1.125rem;
+          letter-spacing: 4px; }
+        main .menu-promo .menu-section .item-one-name p,
+        main .menu-promo .menu-section .item-two-name p,
+        main .menu-promo .menu-section .item-three-name p,
+        main .menu-promo .menu-section .item-four-name p,
+        main .menu-promo .menu-section .item-five-name p {
+          font-size: 1em;
+          margin-top: 5px; } }
 
 /*# sourceMappingURL=main.css.map */
