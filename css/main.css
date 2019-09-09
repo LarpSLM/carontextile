@@ -169,14 +169,16 @@ header {
     height: 450px;
     margin-left: 35vw;
     padding: 20px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center; }
     .menu-promo .brand-description h4 {
       font-size: 1.75rem;
       letter-spacing: 4px;
       font-family: "Proxima nova", sans-serif;
       color: #fafafa;
-      text-transform: uppercase;
-      margin-top: 150px; }
+      text-transform: uppercase; }
     .menu-promo .brand-description p {
       font-size: 1.5rem;
       font-family: "Poiret One", cursive;
@@ -198,10 +200,10 @@ header {
 .item-five {
   display: block;
   text-decoration: none;
-  width: 950px;
+  max-width: 950px;
+  width: 100%;
   height: 400px;
   position: relative;
-  background-color: #7a838c;
   margin-left: 30vw; }
   .item-one .item-one-name,
   .item-one .item-two-name,
@@ -230,10 +232,10 @@ header {
   .item-five .item-five-name {
     position: absolute;
     width: 60%;
-    height: 280px;
+    height: 70%;
     left: -25%;
+    top: 15%;
     background-color: #fafafa;
-    margin: 60px 0;
     transition: .3s;
     padding: 20px 0 20px 20px;
     box-sizing: border-box;
@@ -367,8 +369,8 @@ header {
 .item-three:hover > .item-three-name,
 .item-four:hover > .item-four-name,
 .item-five:hover > .item-five-name {
-  margin: 0;
-  height: 400px;
+  height: 100%;
+  top: 0;
   transition: .3s; }
 
 .item-one:hover > .item-one-name .right,
@@ -749,12 +751,12 @@ footer {
       main .menu-promo .menu-section .item-three-name,
       main .menu-promo .menu-section .item-four-name,
       main .menu-promo .menu-section .item-five-name {
-        width: 85%;
-        height: 90px;
+        width: 80%;
+        height: 65%;
         left: -15%;
         padding: 0;
         margin: 0;
-        bottom: 0; }
+        top: 35%; }
         main .menu-promo .menu-section .item-one-name .left,
         main .menu-promo .menu-section .item-two-name .left,
         main .menu-promo .menu-section .item-three-name .left,
@@ -787,7 +789,8 @@ footer {
           margin-top: 5px; }
   main .info-bottom {
     height: auto;
-    padding: 0; }
+    padding: 0;
+    margin-top: -1px; }
     main .info-bottom a {
       display: block;
       width: 80%;
@@ -806,40 +809,43 @@ footer {
       border-left: none;
       border-right: none; }
 
-  footer .footer-all {
-    width: calc(100% - 40px);
-    padding: 0 0 20px 0;
-    box-sizing: border-box;
-    height: auto; }
-    footer .footer-all .footer-left-top,
-    footer .footer-all .footer-right-top,
-    footer .footer-all .footer-left-bottom,
-    footer .footer-all .footer-right-bottom {
-      display: block;
-      width: 100%;
-      padding: 20px 0 0 0;
-      text-align: center;
-      height: auto;
-      border-bottom: none; }
-      footer .footer-all .footer-left-top a,
-      footer .footer-all .footer-right-top a,
-      footer .footer-all .footer-left-bottom a,
-      footer .footer-all .footer-right-bottom a {
-        font-size: 1.25rem;
-        margin: 0 20px; }
-      footer .footer-all .footer-left-top p,
-      footer .footer-all .footer-right-top p,
-      footer .footer-all .footer-left-bottom p,
-      footer .footer-all .footer-right-bottom p {
-        font-size: 1rem; }
-    footer .footer-all .footer-center {
-      order: 5;
-      display: block;
-      width: 100%; }
-      footer .footer-all .footer-center i {
-        font-size: 3rem; }
-      footer .footer-all .footer-center h4 {
-        font-size: 1rem; } }
+  footer {
+    margin-top: -1px; }
+    footer .footer-all {
+      width: calc(100% - 40px);
+      padding: 0 0 20px 0;
+      box-sizing: border-box;
+      height: auto; }
+      footer .footer-all .footer-left-top,
+      footer .footer-all .footer-right-top,
+      footer .footer-all .footer-left-bottom,
+      footer .footer-all .footer-right-bottom {
+        display: block;
+        width: 100%;
+        padding: 20px 0 0 0;
+        text-align: center;
+        height: auto;
+        border-bottom: none; }
+        footer .footer-all .footer-left-top a,
+        footer .footer-all .footer-right-top a,
+        footer .footer-all .footer-left-bottom a,
+        footer .footer-all .footer-right-bottom a {
+          font-size: 1.25rem;
+          margin: 0 20px; }
+        footer .footer-all .footer-left-top p,
+        footer .footer-all .footer-right-top p,
+        footer .footer-all .footer-left-bottom p,
+        footer .footer-all .footer-right-bottom p {
+          font-size: 1rem; }
+      footer .footer-all .footer-center {
+        order: 5;
+        display: block;
+        width: 100%;
+        margin-top: 20px; }
+        footer .footer-all .footer-center i {
+          font-size: 3rem; }
+        footer .footer-all .footer-center h4 {
+          font-size: 1rem; } }
 @media (min-width: 415px) and (max-width: 760px) {
   header .logo-ico {
     font-size: 2.2rem;
@@ -1001,12 +1007,13 @@ footer {
     footer .footer-all .footer-center {
       order: 5;
       display: block;
-      width: 100%; }
+      width: 100%;
+      margin-top: 20px; }
       footer .footer-all .footer-center i {
         font-size: 3rem; }
       footer .footer-all .footer-center h4 {
         font-size: 1rem; } }
-@media (min-width: 761px) and (max-width: 1023px) {
+@media (min-width: 761px) and (max-width: 1024px) {
   header .logo-ico {
     font-size: 2.2rem;
     padding: 20px; }
@@ -1022,59 +1029,111 @@ footer {
 
   main .info-div {
     height: 550px; }
+    main .info-div .info-div-img {
+      height: 550px;
+      width: 80%; }
+      main .info-div .info-div-img .info-div-text {
+        justify-content: center;
+        width: 60%;
+        left: -20%;
+        display: inline-flex;
+        flex-direction: column; }
+        main .info-div .info-div-img .info-div-text h1 {
+          font-size: 3rem;
+          letter-spacing: 7px;
+          padding: 0 calc(20px + 5vw);
+          line-height: 100%; }
+        main .info-div .info-div-img .info-div-text h3 {
+          padding: 20px calc(20px + 5vw) 0; }
   main .menu-promo {
     background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y; }
+    main .menu-promo .brand-description {
+      height: 350px;
+      margin-left: 30vw; }
+      main .menu-promo .brand-description p {
+        width: 100%; }
     main .menu-promo .menu-section {
-      width: calc(100% - 40px);
-      padding: 15px 0; }
+      width: 90%; }
       main .menu-promo .menu-section .item-one,
       main .menu-promo .menu-section .item-two,
       main .menu-promo .menu-section .item-three,
       main .menu-promo .menu-section .item-four,
       main .menu-promo .menu-section .item-five {
-        width: 90%;
-        height: 176px;
-        margin-left: 15vw; }
+        height: 350px;
+        margin-left: 20vw;
+        width: 85%; }
       main .menu-promo .menu-section .item-one-name,
       main .menu-promo .menu-section .item-two-name,
       main .menu-promo .menu-section .item-three-name,
       main .menu-promo .menu-section .item-four-name,
       main .menu-promo .menu-section .item-five-name {
-        width: 85%;
-        height: 90px;
-        left: -15%;
-        padding: 0;
-        margin: 0;
-        bottom: 0; }
+        width: 70%;
+        padding: 0; }
         main .menu-promo .menu-section .item-one-name .left,
         main .menu-promo .menu-section .item-two-name .left,
         main .menu-promo .menu-section .item-three-name .left,
         main .menu-promo .menu-section .item-four-name .left,
         main .menu-promo .menu-section .item-five-name .left {
-          width: 90%;
-          padding: 10px;
-          box-sizing: border-box; }
-        main .menu-promo .menu-section .item-one-name .right,
-        main .menu-promo .menu-section .item-two-name .right,
-        main .menu-promo .menu-section .item-three-name .right,
-        main .menu-promo .menu-section .item-four-name .right,
-        main .menu-promo .menu-section .item-five-name .right {
-          width: 10%;
-          text-align: left;
-          font-size: 1.125rem; }
+          padding: 20px 0 20px calc(20px + 5vw); }
         main .menu-promo .menu-section .item-one-name h4,
         main .menu-promo .menu-section .item-two-name h4,
         main .menu-promo .menu-section .item-three-name h4,
         main .menu-promo .menu-section .item-four-name h4,
         main .menu-promo .menu-section .item-five-name h4 {
-          font-size: 1.125rem;
-          letter-spacing: 4px; }
+          font-size: 2.25rem;
+          letter-spacing: 6px; }
         main .menu-promo .menu-section .item-one-name p,
         main .menu-promo .menu-section .item-two-name p,
         main .menu-promo .menu-section .item-three-name p,
         main .menu-promo .menu-section .item-four-name p,
         main .menu-promo .menu-section .item-five-name p {
-          font-size: 1em;
-          margin-top: 5px; } }
+          font-size: 1.25em;
+          margin-top: 10px; }
+  main .info-bottom {
+    display: flex;
+    padding: 30px 0;
+    height: 260px;
+    margin-top: -1px; }
+    main .info-bottom a {
+      width: calc(100% / 3);
+      min-width: 0;
+      padding: 20px 15px; }
+      main .info-bottom a i {
+        font-size: 2.25rem; }
+      main .info-bottom a h4 {
+        font-size: 1.25rem;
+        letter-spacing: 4px; }
+      main .info-bottom a p {
+        font-size: 1.125em; }
+
+  footer {
+    padding-bottom: 5vw;
+    height: auto;
+    margin-top: -1px; }
+    footer .footer-all {
+      height: auto;
+      width: 90%; }
+      footer .footer-all .footer-left-top,
+      footer .footer-all .footer-right-top {
+        padding: 30px calc(20px + 1vw);
+        height: 110px; }
+        footer .footer-all .footer-left-top a,
+        footer .footer-all .footer-right-top a {
+          font-size: 1.25rem; }
+          footer .footer-all .footer-left-top a i,
+          footer .footer-all .footer-right-top a i {
+            font-size: 2rem; }
+      footer .footer-all .footer-center {
+        font-size: 1.75rem;
+        margin-top: 20px; }
+        footer .footer-all .footer-center i {
+          font-size: 65px; }
+      footer .footer-all .footer-left-bottom,
+      footer .footer-all .footer-right-bottom {
+        height: 50px;
+        padding: 10px calc(20px + 1vw); }
+        footer .footer-all .footer-left-bottom p,
+        footer .footer-all .footer-right-bottom p {
+          font-size: 1.125rem; } }
 
 /*# sourceMappingURL=main.css.map */
