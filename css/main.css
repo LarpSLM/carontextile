@@ -516,6 +516,7 @@ footer {
 .catalogue {
   width: 100%;
   padding-top: 200px;
+  color: #7a838c;
   background: url("../media/pattern-left.svg") top right/300px no-repeat; }
   .catalogue .catalogue-title {
     max-width: 1170px;
@@ -556,7 +557,7 @@ footer {
       font-weight: bold; }
 
 .catalogue-item {
-  background: #f5f6f6;
+  background: #ededed;
   width: 100%;
   padding: 100px 0;
   position: relative;
@@ -676,7 +677,131 @@ footer {
   height: 100px;
   background-color: #1d3137; }
 
-@media screen and (max-width: 415px) {
+@media (min-width: 761px) and (max-width: 1215px) {
+  header .logo-ico {
+    font-size: 2.2rem;
+    padding: 20px; }
+  header .menu-bottom {
+    right: 30px; }
+  header .menu-bottom:hover i {
+    color: #c4aa74;
+    transform: rotate(0deg); }
+  header .menu .menu-item a {
+    font-size: 1.25rem; }
+  header .menu .menu-item .ico-item {
+    right: 30px; }
+
+  main .info-div {
+    height: 550px; }
+    main .info-div .info-div-img {
+      height: 550px;
+      width: 80%; }
+      main .info-div .info-div-img .info-div-text {
+        justify-content: center;
+        width: 60%;
+        left: -20%;
+        display: inline-flex;
+        flex-direction: column; }
+        main .info-div .info-div-img .info-div-text h1 {
+          font-size: 3rem;
+          letter-spacing: 7px;
+          padding: 0 calc(20px + 5vw);
+          line-height: 100%; }
+        main .info-div .info-div-img .info-div-text h3 {
+          padding: 20px calc(20px + 5vw) 0; }
+  main .menu-promo {
+    background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y; }
+    main .menu-promo .brand-description {
+      height: 350px;
+      margin-left: 30vw; }
+      main .menu-promo .brand-description p {
+        width: 100%; }
+    main .menu-promo .menu-section {
+      width: 90%; }
+      main .menu-promo .menu-section .item-one,
+      main .menu-promo .menu-section .item-two,
+      main .menu-promo .menu-section .item-three,
+      main .menu-promo .menu-section .item-four,
+      main .menu-promo .menu-section .item-five {
+        height: 350px;
+        margin-left: 20vw;
+        width: 85%; }
+      main .menu-promo .menu-section .item-one-name,
+      main .menu-promo .menu-section .item-two-name,
+      main .menu-promo .menu-section .item-three-name,
+      main .menu-promo .menu-section .item-four-name,
+      main .menu-promo .menu-section .item-five-name {
+        width: 70%;
+        padding: 0; }
+        main .menu-promo .menu-section .item-one-name .left,
+        main .menu-promo .menu-section .item-two-name .left,
+        main .menu-promo .menu-section .item-three-name .left,
+        main .menu-promo .menu-section .item-four-name .left,
+        main .menu-promo .menu-section .item-five-name .left {
+          padding: 20px 0 20px calc(20px + 5vw); }
+        main .menu-promo .menu-section .item-one-name h4,
+        main .menu-promo .menu-section .item-two-name h4,
+        main .menu-promo .menu-section .item-three-name h4,
+        main .menu-promo .menu-section .item-four-name h4,
+        main .menu-promo .menu-section .item-five-name h4 {
+          font-size: 2.25rem;
+          letter-spacing: 6px; }
+        main .menu-promo .menu-section .item-one-name p,
+        main .menu-promo .menu-section .item-two-name p,
+        main .menu-promo .menu-section .item-three-name p,
+        main .menu-promo .menu-section .item-four-name p,
+        main .menu-promo .menu-section .item-five-name p {
+          font-size: 1.25em;
+          margin-top: 10px; }
+  main .info-bottom {
+    display: flex;
+    padding: 30px 0;
+    height: 260px;
+    margin-top: -1px; }
+    main .info-bottom a {
+      width: calc(100% / 3);
+      min-width: 0;
+      padding: 20px 15px; }
+      main .info-bottom a i {
+        font-size: 2.25rem; }
+      main .info-bottom a h4 {
+        font-size: 1.25rem;
+        letter-spacing: 4px; }
+      main .info-bottom a p {
+        font-size: 1.125em; }
+
+  footer {
+    padding-bottom: 5vw;
+    height: auto;
+    margin-top: -1px; }
+    footer .footer-all {
+      height: auto;
+      width: 90%; }
+      footer .footer-all .footer-left-top,
+      footer .footer-all .footer-right-top {
+        padding: 30px calc(20px + 1vw);
+        height: 110px; }
+        footer .footer-all .footer-left-top a,
+        footer .footer-all .footer-right-top a {
+          font-size: 1.25rem; }
+          footer .footer-all .footer-left-top a i,
+          footer .footer-all .footer-right-top a i {
+            font-size: 2rem; }
+      footer .footer-all .footer-right-top a {
+        margin-left: calc(10px + 1.5vw); }
+      footer .footer-all .footer-center {
+        font-size: 1.75rem;
+        margin-top: 20px; }
+        footer .footer-all .footer-center i {
+          font-size: 65px; }
+      footer .footer-all .footer-left-bottom,
+      footer .footer-all .footer-right-bottom {
+        height: 50px;
+        padding: 10px calc(20px + 1vw); }
+        footer .footer-all .footer-left-bottom p,
+        footer .footer-all .footer-right-bottom p {
+          font-size: 1.125rem; } }
+@media screen and (max-width: 760px) {
   header .logo-ico {
     font-size: 2.2rem;
     padding: 20px; }
@@ -789,176 +914,6 @@ footer {
           margin-top: 5px; }
   main .info-bottom {
     height: auto;
-    padding: 0;
-    margin-top: -1px; }
-    main .info-bottom a {
-      display: block;
-      width: 80%;
-      margin: 0 auto;
-      height: auto; }
-      main .info-bottom a i {
-        font-size: 2.5em;
-        margin-bottom: 10px; }
-      main .info-bottom a h4 {
-        font-size: 1.25rem; }
-      main .info-bottom a p {
-        font-size: 1.125em; }
-    main .info-bottom .info-bottom-border {
-      border-top: 4px solid #7a838c;
-      border-bottom: 4px solid #7a838c;
-      border-left: none;
-      border-right: none; }
-
-  footer {
-    margin-top: -1px; }
-    footer .footer-all {
-      width: calc(100% - 40px);
-      padding: 0 0 20px 0;
-      box-sizing: border-box;
-      height: auto; }
-      footer .footer-all .footer-left-top,
-      footer .footer-all .footer-right-top,
-      footer .footer-all .footer-left-bottom,
-      footer .footer-all .footer-right-bottom {
-        display: block;
-        width: 100%;
-        padding: 20px 0 0 0;
-        text-align: center;
-        height: auto;
-        border-bottom: none; }
-        footer .footer-all .footer-left-top a,
-        footer .footer-all .footer-right-top a,
-        footer .footer-all .footer-left-bottom a,
-        footer .footer-all .footer-right-bottom a {
-          font-size: 1.25rem;
-          margin: 0 20px; }
-        footer .footer-all .footer-left-top p,
-        footer .footer-all .footer-right-top p,
-        footer .footer-all .footer-left-bottom p,
-        footer .footer-all .footer-right-bottom p {
-          font-size: 1rem; }
-      footer .footer-all .footer-center {
-        order: 5;
-        display: block;
-        width: 100%;
-        margin-top: 20px; }
-        footer .footer-all .footer-center i {
-          font-size: 3rem; }
-        footer .footer-all .footer-center h4 {
-          font-size: 1rem; } }
-@media (min-width: 415px) and (max-width: 760px) {
-  header .logo-ico {
-    font-size: 2.2rem;
-    padding: 20px; }
-  header .menu-bottom {
-    right: 0;
-    height: auto; }
-    header .menu-bottom h3 {
-      display: none; }
-  header .menu-bottom:hover i {
-    color: #c4aa74;
-    transform: rotate(0deg); }
-  header .menu .menu-img {
-    width: 0; }
-  header .menu .menu-item {
-    width: 100vw; }
-    header .menu .menu-item a {
-      font-size: 1.25rem; }
-    header .menu .menu-item .ico-item {
-      right: 0; }
-
-  main .info-div {
-    padding: 87px 0 100px;
-    height: 300px; }
-    main .info-div .info-div-img {
-      height: 235px;
-      width: calc(100% - 40px); }
-      main .info-div .info-div-img .info-div-text {
-        width: 80%;
-        margin-top: 195px;
-        margin-left: 10%;
-        padding: 40px 20px;
-        box-sizing: border-box;
-        left: 0;
-        bottom: auto; }
-        main .info-div .info-div-img .info-div-text h1 {
-          font-size: 1.5rem;
-          letter-spacing: 4px;
-          padding: 0; }
-        main .info-div .info-div-img .info-div-text h3 {
-          font-size: 1.15rem;
-          padding: 0;
-          margin-top: 10px; }
-  main .menu-promo {
-    background: #1d3137 url(../media/pattern-left.svg) top left -160px/210px repeat-y; }
-    main .menu-promo .brand-description {
-      width: 80%;
-      margin-left: 20vw;
-      height: 315px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center; }
-      main .menu-promo .brand-description h4 {
-        font-size: 1.5rem;
-        margin-top: 0; }
-      main .menu-promo .brand-description p {
-        font-size: 1.25rem;
-        width: 100%;
-        margin-top: 0; }
-    main .menu-promo .menu-section {
-      width: calc(100% - 40px);
-      padding: 15px 0; }
-      main .menu-promo .menu-section .item-one,
-      main .menu-promo .menu-section .item-two,
-      main .menu-promo .menu-section .item-three,
-      main .menu-promo .menu-section .item-four,
-      main .menu-promo .menu-section .item-five {
-        width: 90%;
-        height: 176px;
-        margin-left: 15vw; }
-      main .menu-promo .menu-section .item-one-name,
-      main .menu-promo .menu-section .item-two-name,
-      main .menu-promo .menu-section .item-three-name,
-      main .menu-promo .menu-section .item-four-name,
-      main .menu-promo .menu-section .item-five-name {
-        width: 85%;
-        height: 90px;
-        left: -15%;
-        padding: 0;
-        margin: 0;
-        bottom: 0; }
-        main .menu-promo .menu-section .item-one-name .left,
-        main .menu-promo .menu-section .item-two-name .left,
-        main .menu-promo .menu-section .item-three-name .left,
-        main .menu-promo .menu-section .item-four-name .left,
-        main .menu-promo .menu-section .item-five-name .left {
-          width: 90%;
-          padding: 10px;
-          box-sizing: border-box; }
-        main .menu-promo .menu-section .item-one-name .right,
-        main .menu-promo .menu-section .item-two-name .right,
-        main .menu-promo .menu-section .item-three-name .right,
-        main .menu-promo .menu-section .item-four-name .right,
-        main .menu-promo .menu-section .item-five-name .right {
-          width: 10%;
-          text-align: left;
-          font-size: 1.125rem; }
-        main .menu-promo .menu-section .item-one-name h4,
-        main .menu-promo .menu-section .item-two-name h4,
-        main .menu-promo .menu-section .item-three-name h4,
-        main .menu-promo .menu-section .item-four-name h4,
-        main .menu-promo .menu-section .item-five-name h4 {
-          font-size: 1.125rem;
-          letter-spacing: 4px; }
-        main .menu-promo .menu-section .item-one-name p,
-        main .menu-promo .menu-section .item-two-name p,
-        main .menu-promo .menu-section .item-three-name p,
-        main .menu-promo .menu-section .item-four-name p,
-        main .menu-promo .menu-section .item-five-name p {
-          font-size: 1em;
-          margin-top: 5px; }
-  main .info-bottom {
-    height: auto;
     padding: 0; }
     main .info-bottom a {
       display: block;
@@ -977,6 +932,75 @@ footer {
       border-bottom: 4px solid #7a838c;
       border-left: none;
       border-right: none; }
+
+  main .catalogue {
+    padding-top: 120px;
+    background: none; }
+    main .catalogue .catalogue-title h1 {
+      font-size: 1.5rem;
+      margin: 20px;
+      padding-left: 10vw;
+      letter-spacing: 4px; }
+    main .catalogue .catalogue-title .left {
+      width: 20%;
+      height: 80px; }
+    main .catalogue .catalogue-title .left::after {
+      width: 10px; }
+    main .catalogue .catalogue-title .right {
+      width: 80%;
+      height: 80px; }
+      main .catalogue .catalogue-title .right p {
+        font-size: 1.125rem;
+        padding: 20px;
+        height: 80px; }
+  main .catalogue-item {
+    padding: 50px 0;
+    height: auto;
+    position: static; }
+    main .catalogue-item .absolute {
+      height: auto;
+      width: calc(100% - 40px);
+      margin: 0 auto;
+      position: static; }
+    main .catalogue-item .elements-left-to-right,
+    main .catalogue-item .elements-right-to-left {
+      margin: 0 auto 50px; }
+    main .catalogue-item .elements-left-to-right:last-child {
+      margin: 0; }
+    main .catalogue-item .elements {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap; }
+      main .catalogue-item .elements .wide {
+        display: block;
+        width: 100%;
+        height: 50vw; }
+        main .catalogue-item .elements .wide .elements-title {
+          padding: 20px; }
+          main .catalogue-item .elements .wide .elements-title h4 {
+            font-size: 1.25rem;
+            letter-spacing: 4px;
+            text-align: left; }
+      main .catalogue-item .elements .slim {
+        width: 100%;
+        height: auto;
+        order: 2; }
+        main .catalogue-item .elements .slim p {
+          font-size: 1.125em;
+          text-align: justify; }
+        main .catalogue-item .elements .slim a {
+          font-size: 1rem;
+          height: 50px;
+          line-height: 50px;
+          margin: 20px auto 0; }
+  main .catalogue-item::after {
+    content: none;
+    width: 10px;
+    left: 20%; }
+
+  .pre-footer {
+    height: 50px; }
 
   footer .footer-all {
     width: calc(100% - 40px);
@@ -1013,127 +1037,17 @@ footer {
         font-size: 3rem; }
       footer .footer-all .footer-center h4 {
         font-size: 1rem; } }
-@media (min-width: 761px) and (max-width: 1024px) {
+@media (min-width: 500px) and (max-width: 760px) {
+  main .menu-promo .menu-section .item-one-name,
+  main .menu-promo .menu-section .item-two-name,
+  main .menu-promo .menu-section .item-three-name,
+  main .menu-promo .menu-section .item-four-name,
+  main .menu-promo .menu-section .item-five-name {
+    width: 60%;
+    padding-left: 5vw; } }
+@media screen and (max-width: 415px) {
   header .logo-ico {
-    font-size: 2.2rem;
-    padding: 20px; }
-  header .menu-bottom {
-    right: 30px; }
-  header .menu-bottom:hover i {
-    color: #c4aa74;
-    transform: rotate(0deg); }
-  header .menu .menu-item a {
-    font-size: 1.25rem; }
-  header .menu .menu-item .ico-item {
-    right: 30px; }
-
-  main .info-div {
-    height: 550px; }
-    main .info-div .info-div-img {
-      height: 550px;
-      width: 80%; }
-      main .info-div .info-div-img .info-div-text {
-        justify-content: center;
-        width: 60%;
-        left: -20%;
-        display: inline-flex;
-        flex-direction: column; }
-        main .info-div .info-div-img .info-div-text h1 {
-          font-size: 3rem;
-          letter-spacing: 7px;
-          padding: 0 calc(20px + 5vw);
-          line-height: 100%; }
-        main .info-div .info-div-img .info-div-text h3 {
-          padding: 20px calc(20px + 5vw) 0; }
-  main .menu-promo {
-    background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y; }
-    main .menu-promo .brand-description {
-      height: 350px;
-      margin-left: 30vw; }
-      main .menu-promo .brand-description p {
-        width: 100%; }
-    main .menu-promo .menu-section {
-      width: 90%; }
-      main .menu-promo .menu-section .item-one,
-      main .menu-promo .menu-section .item-two,
-      main .menu-promo .menu-section .item-three,
-      main .menu-promo .menu-section .item-four,
-      main .menu-promo .menu-section .item-five {
-        height: 350px;
-        margin-left: 20vw;
-        width: 85%; }
-      main .menu-promo .menu-section .item-one-name,
-      main .menu-promo .menu-section .item-two-name,
-      main .menu-promo .menu-section .item-three-name,
-      main .menu-promo .menu-section .item-four-name,
-      main .menu-promo .menu-section .item-five-name {
-        width: 70%;
-        padding: 0; }
-        main .menu-promo .menu-section .item-one-name .left,
-        main .menu-promo .menu-section .item-two-name .left,
-        main .menu-promo .menu-section .item-three-name .left,
-        main .menu-promo .menu-section .item-four-name .left,
-        main .menu-promo .menu-section .item-five-name .left {
-          padding: 20px 0 20px calc(20px + 5vw); }
-        main .menu-promo .menu-section .item-one-name h4,
-        main .menu-promo .menu-section .item-two-name h4,
-        main .menu-promo .menu-section .item-three-name h4,
-        main .menu-promo .menu-section .item-four-name h4,
-        main .menu-promo .menu-section .item-five-name h4 {
-          font-size: 2.25rem;
-          letter-spacing: 6px; }
-        main .menu-promo .menu-section .item-one-name p,
-        main .menu-promo .menu-section .item-two-name p,
-        main .menu-promo .menu-section .item-three-name p,
-        main .menu-promo .menu-section .item-four-name p,
-        main .menu-promo .menu-section .item-five-name p {
-          font-size: 1.25em;
-          margin-top: 10px; }
-  main .info-bottom {
-    display: flex;
-    padding: 30px 0;
-    height: 260px;
-    margin-top: -1px; }
-    main .info-bottom a {
-      width: calc(100% / 3);
-      min-width: 0;
-      padding: 20px 15px; }
-      main .info-bottom a i {
-        font-size: 2.25rem; }
-      main .info-bottom a h4 {
-        font-size: 1.25rem;
-        letter-spacing: 4px; }
-      main .info-bottom a p {
-        font-size: 1.125em; }
-
-  footer {
-    padding-bottom: 5vw;
-    height: auto;
-    margin-top: -1px; }
-    footer .footer-all {
-      height: auto;
-      width: 90%; }
-      footer .footer-all .footer-left-top,
-      footer .footer-all .footer-right-top {
-        padding: 30px calc(20px + 1vw);
-        height: 110px; }
-        footer .footer-all .footer-left-top a,
-        footer .footer-all .footer-right-top a {
-          font-size: 1.25rem; }
-          footer .footer-all .footer-left-top a i,
-          footer .footer-all .footer-right-top a i {
-            font-size: 2rem; }
-      footer .footer-all .footer-center {
-        font-size: 1.75rem;
-        margin-top: 20px; }
-        footer .footer-all .footer-center i {
-          font-size: 65px; }
-      footer .footer-all .footer-left-bottom,
-      footer .footer-all .footer-right-bottom {
-        height: 50px;
-        padding: 10px calc(20px + 1vw); }
-        footer .footer-all .footer-left-bottom p,
-        footer .footer-all .footer-right-bottom p {
-          font-size: 1.125rem; } }
+    font-size: 2rem;
+    padding: 20px 0; } }
 
 /*# sourceMappingURL=main.css.map */
