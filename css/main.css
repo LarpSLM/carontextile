@@ -770,6 +770,56 @@ footer {
       main .info-bottom a p {
         font-size: 1.125em; }
 
+  .catalogue {
+    padding-top: 150px;
+    background: url("../media/pattern-left.svg") top right/250px no-repeat; }
+    .catalogue .catalogue-title h1 {
+      padding: 5% 10%; }
+    .catalogue .catalogue-title p {
+      height: 100px;
+      padding: 30px 50px; }
+    .catalogue .catalogue-title .left,
+    .catalogue .catalogue-title .right {
+      height: 100px; }
+
+  .absolute {
+    width: calc(100% - 80px);
+    height: auto;
+    left: 40px; }
+
+  .elements-left-to-right {
+    margin: 0 auto 50px; }
+
+  .elements-right-to-left {
+    margin: 0 auto 50px; }
+
+  .catalogue-item {
+    height: 1800px; }
+    .catalogue-item .elements {
+      display: flex;
+      height: 320px;
+      width: 100%; }
+      .catalogue-item .elements .wide {
+        display: inline-block;
+        width: calc(100% - 250px);
+        height: 100%; }
+        .catalogue-item .elements .wide .elements-title {
+          padding: 20px; }
+          .catalogue-item .elements .wide .elements-title h4 {
+            font-size: 1.75rem;
+            letter-spacing: 4px; }
+      .catalogue-item .elements .slim {
+        width: 250px;
+        height: 100%; }
+        .catalogue-item .elements .slim p {
+          font-size: 1.25em;
+          text-align: justify; }
+        .catalogue-item .elements .slim a {
+          font-size: 1rem;
+          height: 50px;
+          line-height: 50px;
+          margin: 0 auto; }
+
   footer {
     padding-bottom: 5vw;
     height: auto;
@@ -1044,7 +1094,28 @@ footer {
   main .menu-promo .menu-section .item-four-name,
   main .menu-promo .menu-section .item-five-name {
     width: 60%;
-    padding-left: 5vw; } }
+    padding-left: 5vw; }
+  main .catalogue-item .elements .wide {
+    display: inline-block;
+    width: calc(100% - 250px);
+    height: 270px; }
+    main .catalogue-item .elements .wide .elements-title {
+      padding: 20px; }
+      main .catalogue-item .elements .wide .elements-title h4 {
+        font-size: 1.25rem;
+        letter-spacing: 4px;
+        text-align: left; }
+  main .catalogue-item .elements .slim {
+    width: 250px;
+    height: auto; }
+    main .catalogue-item .elements .slim p {
+      font-size: 1.125em;
+      text-align: justify; }
+    main .catalogue-item .elements .slim a {
+      font-size: 1rem;
+      height: 50px;
+      line-height: 50px;
+      margin: 0 auto; } }
 @media screen and (max-width: 415px) {
   header .logo-ico {
     font-size: 2rem;
