@@ -710,6 +710,8 @@ footer {
     font-family: "Poiret One", cursive;
     color: #c4aa74;
     font-weight: bold; }
+    .page-description p a {
+      color: #fafafa; }
 
 .item-group {
   width: 100%;
@@ -726,8 +728,7 @@ footer {
     margin: 50px 0; }
   .item-group a:hover > .item-img .item-description h4 {
     color: #c4aa74;
-    transition: .3s;
-    text-shadow: 1px 1px 0 #c4aa74; }
+    transition: .3s; }
 
 .item-img {
   position: relative;
@@ -741,18 +742,17 @@ footer {
     height: auto;
     padding: 20px;
     box-sizing: border-box;
-    background: #fafafa;
+    background: #1d3137;
     left: 10%;
     top: 90%;
-    z-index: 100; }
+    z-index: 10; }
     .item-img .item-description h4 {
       font-size: 1.25rem;
       letter-spacing: 4px;
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
-      color: #1d3137;
+      color: #fafafa;
       font-weight: bold;
-      text-shadow: 1px 1px 0 #1d3137;
       text-align: center; }
   .item-img .item-hover {
     width: 100%;
@@ -773,9 +773,69 @@ footer {
       text-align: center;
       text-shadow: 1px 1px 0 #fafafa; }
   .item-img .item-hover:hover {
-    background: rgba(29, 49, 55, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     opacity: 1;
     transition: .3s; }
+
+.tape-251 {
+  background: url("../media/curtan-tapes-251-small.jpg") center;
+  background-size: cover; }
+
+.tape-251-O {
+  background: url("../media/curtan-tapes-251-O-small.jpg") center;
+  background-size: cover; }
+
+.tape-401 {
+  background: url("../media/curtan-tapes-401-small.jpg") center;
+  background-size: cover; }
+
+.tape-401-O {
+  background: url("../media/curtan-tapes-401-O-small.jpg") center;
+  background-size: cover; }
+
+.tape-605 {
+  background: url("../media/curtan-tapes-605-small.jpg") center;
+  background-size: cover; }
+
+.tape-605-O {
+  background: url("../media/curtan-tapes-605-O-small.jpg") center;
+  background-size: cover; }
+
+.tape-606 {
+  background: url("../media/curtan-tapes-606-small.jpg") center;
+  background-size: cover; }
+
+.tape-606-O {
+  background: url("../media/curtan-tapes-606-O-small.jpg") center;
+  background-size: cover; }
+
+.tape-607 {
+  background: url("../media/curtan-tapes-607-small.jpg") center;
+  background-size: cover; }
+
+.tape-607-O {
+  background: url("../media/curtan-tapes-607-O-small.jpg") center;
+  background-size: cover; }
+
+.tape-905-O {
+  background: url("../media/curtan-tapes-905-O-small.jpg") center;
+  background-size: cover; }
+
+.tape-906 {
+  background: url("../media/curtan-tapes-906-small.jpg") center;
+  background-size: cover; }
+
+.tape-906-O {
+  background: url("../media/curtan-tapes-906-O-small.jpg") center;
+  background-size: cover; }
+
+.pipe-tape-100 {
+  background: url("../media/pipe-tape-100.jpg") center;
+  background-size: cover; }
+
+.flowerpot-one {
+  background: url("../media/flowerpot-one-small.jpg") center;
+  background-size: cover; }
 
 @media (min-width: 761px) and (max-width: 1215px) {
   header .logo-ico {
@@ -926,7 +986,7 @@ footer {
       font-size: 3rem; }
 
   .page-description {
-    height: 415px;
+    height: auto;
     background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y;
     padding: 20px 5vw 20px 25vw; }
     .page-description p {
