@@ -777,64 +777,104 @@ footer {
     opacity: 1;
     transition: .3s; }
 
+.tape-one {
+  background: url("../media/tape-one-small.jpg") center no-repeat;
+  background-size: cover; }
+
 .tape-251 {
-  background: url("../media/curtan-tapes-251-small.jpg") center;
+  background: url("../media/curtan-tapes-251-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-251-O {
-  background: url("../media/curtan-tapes-251-O-small.jpg") center;
+  background: url("../media/curtan-tapes-251-O-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-401 {
-  background: url("../media/curtan-tapes-401-small.jpg") center;
+  background: url("../media/curtan-tapes-401-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-401-O {
-  background: url("../media/curtan-tapes-401-O-small.jpg") center;
+  background: url("../media/curtan-tapes-401-O-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-605 {
-  background: url("../media/curtan-tapes-605-small.jpg") center;
+  background: url("../media/curtan-tapes-605-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-605-O {
-  background: url("../media/curtan-tapes-605-O-small.jpg") center;
+  background: url("../media/curtan-tapes-605-O-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-606 {
-  background: url("../media/curtan-tapes-606-small.jpg") center;
+  background: url("../media/curtan-tapes-606-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-606-O {
-  background: url("../media/curtan-tapes-606-O-small.jpg") center;
+  background: url("../media/curtan-tapes-606-O-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-607 {
-  background: url("../media/curtan-tapes-607-small.jpg") center;
+  background: url("../media/curtan-tapes-607-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-607-O {
-  background: url("../media/curtan-tapes-607-O-small.jpg") center;
+  background: url("../media/curtan-tapes-607-O-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-905-O {
-  background: url("../media/curtan-tapes-905-O-small.jpg") center;
+  background: url("../media/curtan-tapes-905-O-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-906 {
-  background: url("../media/curtan-tapes-906-small.jpg") center;
+  background: url("../media/curtan-tapes-906-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-906-O {
-  background: url("../media/curtan-tapes-906-O-small.jpg") center;
+  background: url("../media/curtan-tapes-906-O-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.tape-1005 {
+  background: url("../media/curtan-tapes-1005-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.tape-1005t {
+  background: url("../media/curtan-tapes-1005t-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.tape-1038 {
+  background: url("../media/curtan-tapes-1038-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.tape-1038-O {
+  background: url("../media/curtan-tapes-1038-O-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.tape-1090 {
+  background: url("../media/curtan-tapes-1090-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.tape-1090t {
+  background: url("../media/curtan-tapes-1090t-small.jpg") center no-repeat;
   background-size: cover; }
 
 .pipe-tape-100 {
-  background: url("../media/pipe-tape-100.jpg") center;
+  background: url("../media/pipe-tape-100.jpg") center no-repeat;
   background-size: cover; }
 
 .flowerpot-one {
-  background: url("../media/flowerpot-one-small.jpg") center;
+  background: url("../media/flowerpot-one-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.hangers-one {
+  background: url("../media/hangers-one-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.hangers-winter {
+  background: url("../media/hangers-winter-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.hangers-44-46a {
+  background: url("../media/hangers-44-46a-small.jpg") center no-repeat;
   background-size: cover; }
 
 @media (min-width: 761px) and (max-width: 1215px) {
