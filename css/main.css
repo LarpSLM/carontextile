@@ -1,3 +1,8 @@
+@charset "UTF-8";
+/*╤Б╨╕╨╜╨╕╨╣ ╨│╤А╨░╨┤╨╕╨╡╨╜╤В:
+linear-gradient(90deg, #0d1333, #132974)
+
+ */
 @font-face {
   font-family: 'Proxima nova';
   src: url("../fonts/proxima nova.ttf"); }
@@ -34,7 +39,7 @@ header {
     top: 0;
     height: 120px;
     width: 66px;
-    background-color: #1e3e48;
+    background: #1e3e48;
     text-align: center;
     z-index: 999;
     cursor: pointer; }
@@ -146,9 +151,9 @@ header {
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
       padding: 110px 100px 0 100px;
-      color: #1e3e48;
+      color: #1d3137;
       font-weight: bold;
-      text-shadow: 1px 1px 0 #1e3e48;
+      text-shadow: 1px 1px 0 #1d3137;
       line-height: 110%; }
     .info-div .info-div-text h3 {
       font-size: 1.5em;
@@ -428,9 +433,9 @@ header {
       letter-spacing: 8px;
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
-      color: #1e3e48;
+      color: #1d3137;
       font-weight: bold;
-      text-shadow: 1px 1px 0 #1e3e48; }
+      text-shadow: 1px 1px 0 #1d3137; }
     .item-one .item-one-name p,
     .item-one .item-two-name p,
     .item-one .item-three-name p,
@@ -576,7 +581,7 @@ header {
     transition: .2s; }
 
 footer {
-  background-color: #1d3137;
+  background: #1d3137;
   width: 100%;
   height: 350px; }
   footer .footer-all {
@@ -611,7 +616,7 @@ footer {
       letter-spacing: 2px;
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
-      color: #1e3e48;
+      color: #1d3137;
       font-weight: bold; }
   footer .footer-right-top {
     text-align: right; }
@@ -619,7 +624,7 @@ footer {
       display: inline-block;
       text-decoration: none;
       font-size: 2.5rem;
-      color: #1e3e48;
+      color: #1d3137;
       margin-left: calc(20px + 1vw); }
   footer .footer-left-bottom,
   footer .footer-right-bottom {
@@ -661,9 +666,9 @@ footer {
       letter-spacing: 8px;
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
-      color: #1e3e48;
+      color: #1d3137;
       font-weight: bold;
-      text-shadow: 1px 1px 0 #1e3e48;
+      text-shadow: 1px 1px 0 #1d3137;
       line-height: 110%;
       padding: 0 0 20px 10%; }
     .catalogue .catalogue-title .left,
@@ -818,7 +823,7 @@ footer {
 .pre-footer {
   width: 100%;
   height: 100px;
-  background-color: #1d3137; }
+  background: #1d3137; }
 
 .page-title {
   width: 100%;
@@ -1199,6 +1204,14 @@ footer {
 
 .woman-blackstand {
   background: url("../media/woman-blackstand-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.woman-chromestand-one {
+  background: url("../media/mannequins-woman-chromestand-size50-52-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.woman-blackstand-two {
+  background: url("../media/mannequins-woman-blackstand-size50-52-small.jpg") center no-repeat;
   background-size: cover; }
 
 .man-nostand {
@@ -1686,57 +1699,43 @@ footer {
         font-size: 1.125rem;
         padding: 20px;
         height: 80px; }
-  main .catalogue-item,
-  main item-div {
+  main .catalogue-item {
     padding: 50px 0;
     height: auto;
     position: static; }
-    main .catalogue-item .absolute,
-    main .catalogue-item item-back,
-    main item-div .absolute,
-    main item-div item-back {
+    main .catalogue-item .absolute {
       height: auto;
       width: calc(100% - 40px);
       margin: 0 auto;
       position: static; }
     main .catalogue-item .elements-left-to-right,
-    main .catalogue-item .elements-right-to-left,
-    main item-div .elements-left-to-right,
-    main item-div .elements-right-to-left {
+    main .catalogue-item .elements-right-to-left {
       margin: 0 auto 50px; }
-    main .catalogue-item .elements-left-to-right:last-child,
-    main item-div .elements-left-to-right:last-child {
+    main .catalogue-item .elements-left-to-right:last-child {
       margin: 0; }
-    main .catalogue-item .elements,
-    main item-div .elements {
+    main .catalogue-item .elements {
       width: 100%;
       height: auto;
       display: flex;
       flex-wrap: wrap; }
-      main .catalogue-item .elements .wide,
-      main item-div .elements .wide {
+      main .catalogue-item .elements .wide {
         display: block;
         width: 100%;
         height: 50vw; }
-        main .catalogue-item .elements .wide .elements-title,
-        main item-div .elements .wide .elements-title {
+        main .catalogue-item .elements .wide .elements-title {
           padding: 20px; }
-          main .catalogue-item .elements .wide .elements-title h4,
-          main item-div .elements .wide .elements-title h4 {
+          main .catalogue-item .elements .wide .elements-title h4 {
             font-size: 1.25rem;
             letter-spacing: 4px;
             text-align: left; }
-      main .catalogue-item .elements .slim,
-      main item-div .elements .slim {
+      main .catalogue-item .elements .slim {
         width: 100%;
         height: auto;
         order: 2; }
-        main .catalogue-item .elements .slim p,
-        main item-div .elements .slim p {
+        main .catalogue-item .elements .slim p {
           font-size: 1.125em;
           text-align: justify; }
-        main .catalogue-item .elements .slim a,
-        main item-div .elements .slim a {
+        main .catalogue-item .elements .slim a {
           font-size: 1rem;
           height: 50px;
           line-height: 50px;
@@ -1775,19 +1774,24 @@ footer {
     padding: 0 0 50px 0;
     height: 75vw; }
 
-  .item-back .item-div-img {
-    width: calc(100% - 20px); }
-    .item-back .item-div-img .item-div-text {
-      width: 80%;
-      height: 70%;
-      left: 10%;
-      bottom: -45%; }
-      .item-back .item-div-img .item-div-text .table-r {
-        margin: 0; }
-      .item-back .item-div-img .item-div-text .table-d.left {
-        font-size: 1rem; }
-      .item-back .item-div-img .item-div-text .table-d.right {
-        font-size: 1rem; }
+  .item-back {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    height: auto;
+    position: static; }
+    .item-back .item-div-img {
+      width: calc(100% - 20px); }
+      .item-back .item-div-img .item-div-text {
+        width: 80%;
+        height: 70%;
+        left: 10%;
+        bottom: -45%; }
+        .item-back .item-div-img .item-div-text .table-r {
+          margin: 0; }
+        .item-back .item-div-img .item-div-text .table-d.left {
+          font-size: 1rem; }
+        .item-back .item-div-img .item-div-text .table-d.right {
+          font-size: 1rem; }
 
   footer .footer-all {
     width: calc(100% - 40px);
