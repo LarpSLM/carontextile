@@ -57,7 +57,6 @@ header {
       font-size: 1.7em;
       transition: .2s; }
   header .menu-bottom:hover i {
-    color: #fafafa;
     transform: rotate(90deg);
     transition: .2s; }
   header .menu {
@@ -82,8 +81,12 @@ header {
       height: 100vh; }
 
 .link-item {
-  display: inline-block;
-  padding: 20vh 10vw; }
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 70px 10vw 0 10vw;
+  box-sizing: border-box;
+  height: 100%; }
   .link-item a {
     display: block;
     width: auto;
@@ -92,7 +95,7 @@ header {
     font-family: "Proxima nova", sans-serif;
     font-weight: bold;
     color: #fafafa;
-    margin: 20px 0;
+    margin: 1vh 0;
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: inherit; }
@@ -100,14 +103,16 @@ header {
     font-family: "Poiret One", cursive;
     font-weight: 400;
     padding-left: 20px;
-    margin: 10px 0;
+    margin: .5vh 0;
     opacity: inherit; }
   .link-item a:hover {
     color: #c4aa74;
     transition: .2s; }
 
 .ico-item {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 40vh;
   width: 66px;
   vertical-align: top;
@@ -121,7 +126,6 @@ header {
     color: #fafafa;
     font-size: 24px;
     text-align: center;
-    margin-bottom: 8vh;
     opacity: inherit; }
   .ico-item a:hover {
     color: #c4aa74;
@@ -144,13 +148,18 @@ header {
     height: 70%;
     background-color: #fafafa;
     left: -20%;
-    bottom: 15%; }
+    bottom: 15%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%;
+    box-sizing: border-box; }
     .info-div .info-div-text h1 {
       font-size: 3.375rem;
       letter-spacing: 8px;
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
-      padding: 110px 100px 0 100px;
+      margin-bottom: 20px;
       color: #1d3137;
       font-weight: bold;
       text-shadow: 1px 1px 0 #1d3137;
@@ -158,8 +167,7 @@ header {
     .info-div .info-div-text h3 {
       font-size: 1.5em;
       font-family: "Poiret One", cursive;
-      color: #7a838c;
-      padding: 30px 100px; }
+      color: #7a838c; }
 
 .menu.active {
   opacity: 1;
@@ -204,7 +212,8 @@ header {
 .item-four,
 .item-five,
 .item-six,
-.item-seven {
+.item-seven,
+.item-eight {
   display: block;
   text-decoration: none;
   max-width: 950px;
@@ -219,6 +228,7 @@ header {
   .item-one .item-five-name,
   .item-one .item-six-name,
   .item-one .item-seven-name,
+  .item-one .item-eight-name,
   .item-two .item-one-name,
   .item-two .item-two-name,
   .item-two .item-three-name,
@@ -226,6 +236,7 @@ header {
   .item-two .item-five-name,
   .item-two .item-six-name,
   .item-two .item-seven-name,
+  .item-two .item-eight-name,
   .item-three .item-one-name,
   .item-three .item-two-name,
   .item-three .item-three-name,
@@ -233,6 +244,7 @@ header {
   .item-three .item-five-name,
   .item-three .item-six-name,
   .item-three .item-seven-name,
+  .item-three .item-eight-name,
   .item-four .item-one-name,
   .item-four .item-two-name,
   .item-four .item-three-name,
@@ -240,6 +252,7 @@ header {
   .item-four .item-five-name,
   .item-four .item-six-name,
   .item-four .item-seven-name,
+  .item-four .item-eight-name,
   .item-five .item-one-name,
   .item-five .item-two-name,
   .item-five .item-three-name,
@@ -247,6 +260,7 @@ header {
   .item-five .item-five-name,
   .item-five .item-six-name,
   .item-five .item-seven-name,
+  .item-five .item-eight-name,
   .item-six .item-one-name,
   .item-six .item-two-name,
   .item-six .item-three-name,
@@ -254,13 +268,23 @@ header {
   .item-six .item-five-name,
   .item-six .item-six-name,
   .item-six .item-seven-name,
+  .item-six .item-eight-name,
   .item-seven .item-one-name,
   .item-seven .item-two-name,
   .item-seven .item-three-name,
   .item-seven .item-four-name,
   .item-seven .item-five-name,
   .item-seven .item-six-name,
-  .item-seven .item-seven-name {
+  .item-seven .item-seven-name,
+  .item-seven .item-eight-name,
+  .item-eight .item-one-name,
+  .item-eight .item-two-name,
+  .item-eight .item-three-name,
+  .item-eight .item-four-name,
+  .item-eight .item-five-name,
+  .item-eight .item-six-name,
+  .item-eight .item-seven-name,
+  .item-eight .item-eight-name {
     position: absolute;
     width: 60%;
     height: 70%;
@@ -280,6 +304,7 @@ header {
     .item-one .item-five-name .left,
     .item-one .item-six-name .left,
     .item-one .item-seven-name .left,
+    .item-one .item-eight-name .left,
     .item-two .item-one-name .left,
     .item-two .item-two-name .left,
     .item-two .item-three-name .left,
@@ -287,6 +312,7 @@ header {
     .item-two .item-five-name .left,
     .item-two .item-six-name .left,
     .item-two .item-seven-name .left,
+    .item-two .item-eight-name .left,
     .item-three .item-one-name .left,
     .item-three .item-two-name .left,
     .item-three .item-three-name .left,
@@ -294,6 +320,7 @@ header {
     .item-three .item-five-name .left,
     .item-three .item-six-name .left,
     .item-three .item-seven-name .left,
+    .item-three .item-eight-name .left,
     .item-four .item-one-name .left,
     .item-four .item-two-name .left,
     .item-four .item-three-name .left,
@@ -301,6 +328,7 @@ header {
     .item-four .item-five-name .left,
     .item-four .item-six-name .left,
     .item-four .item-seven-name .left,
+    .item-four .item-eight-name .left,
     .item-five .item-one-name .left,
     .item-five .item-two-name .left,
     .item-five .item-three-name .left,
@@ -308,6 +336,7 @@ header {
     .item-five .item-five-name .left,
     .item-five .item-six-name .left,
     .item-five .item-seven-name .left,
+    .item-five .item-eight-name .left,
     .item-six .item-one-name .left,
     .item-six .item-two-name .left,
     .item-six .item-three-name .left,
@@ -315,13 +344,23 @@ header {
     .item-six .item-five-name .left,
     .item-six .item-six-name .left,
     .item-six .item-seven-name .left,
+    .item-six .item-eight-name .left,
     .item-seven .item-one-name .left,
     .item-seven .item-two-name .left,
     .item-seven .item-three-name .left,
     .item-seven .item-four-name .left,
     .item-seven .item-five-name .left,
     .item-seven .item-six-name .left,
-    .item-seven .item-seven-name .left {
+    .item-seven .item-seven-name .left,
+    .item-seven .item-eight-name .left,
+    .item-eight .item-one-name .left,
+    .item-eight .item-two-name .left,
+    .item-eight .item-three-name .left,
+    .item-eight .item-four-name .left,
+    .item-eight .item-five-name .left,
+    .item-eight .item-six-name .left,
+    .item-eight .item-seven-name .left,
+    .item-eight .item-eight-name .left {
       width: 80%;
       padding: 20px 10px 20px 20px;
       box-sizing: border-box; }
@@ -332,6 +371,7 @@ header {
     .item-one .item-five-name .right,
     .item-one .item-six-name .right,
     .item-one .item-seven-name .right,
+    .item-one .item-eight-name .right,
     .item-two .item-one-name .right,
     .item-two .item-two-name .right,
     .item-two .item-three-name .right,
@@ -339,6 +379,7 @@ header {
     .item-two .item-five-name .right,
     .item-two .item-six-name .right,
     .item-two .item-seven-name .right,
+    .item-two .item-eight-name .right,
     .item-three .item-one-name .right,
     .item-three .item-two-name .right,
     .item-three .item-three-name .right,
@@ -346,6 +387,7 @@ header {
     .item-three .item-five-name .right,
     .item-three .item-six-name .right,
     .item-three .item-seven-name .right,
+    .item-three .item-eight-name .right,
     .item-four .item-one-name .right,
     .item-four .item-two-name .right,
     .item-four .item-three-name .right,
@@ -353,6 +395,7 @@ header {
     .item-four .item-five-name .right,
     .item-four .item-six-name .right,
     .item-four .item-seven-name .right,
+    .item-four .item-eight-name .right,
     .item-five .item-one-name .right,
     .item-five .item-two-name .right,
     .item-five .item-three-name .right,
@@ -360,6 +403,7 @@ header {
     .item-five .item-five-name .right,
     .item-five .item-six-name .right,
     .item-five .item-seven-name .right,
+    .item-five .item-eight-name .right,
     .item-six .item-one-name .right,
     .item-six .item-two-name .right,
     .item-six .item-three-name .right,
@@ -367,13 +411,23 @@ header {
     .item-six .item-five-name .right,
     .item-six .item-six-name .right,
     .item-six .item-seven-name .right,
+    .item-six .item-eight-name .right,
     .item-seven .item-one-name .right,
     .item-seven .item-two-name .right,
     .item-seven .item-three-name .right,
     .item-seven .item-four-name .right,
     .item-seven .item-five-name .right,
     .item-seven .item-six-name .right,
-    .item-seven .item-seven-name .right {
+    .item-seven .item-seven-name .right,
+    .item-seven .item-eight-name .right,
+    .item-eight .item-one-name .right,
+    .item-eight .item-two-name .right,
+    .item-eight .item-three-name .right,
+    .item-eight .item-four-name .right,
+    .item-eight .item-five-name .right,
+    .item-eight .item-six-name .right,
+    .item-eight .item-seven-name .right,
+    .item-eight .item-eight-name .right {
       display: inline-block;
       width: 10%;
       text-align: right;
@@ -387,6 +441,7 @@ header {
     .item-one .item-five-name h4,
     .item-one .item-six-name h4,
     .item-one .item-seven-name h4,
+    .item-one .item-eight-name h4,
     .item-two .item-one-name h4,
     .item-two .item-two-name h4,
     .item-two .item-three-name h4,
@@ -394,6 +449,7 @@ header {
     .item-two .item-five-name h4,
     .item-two .item-six-name h4,
     .item-two .item-seven-name h4,
+    .item-two .item-eight-name h4,
     .item-three .item-one-name h4,
     .item-three .item-two-name h4,
     .item-three .item-three-name h4,
@@ -401,6 +457,7 @@ header {
     .item-three .item-five-name h4,
     .item-three .item-six-name h4,
     .item-three .item-seven-name h4,
+    .item-three .item-eight-name h4,
     .item-four .item-one-name h4,
     .item-four .item-two-name h4,
     .item-four .item-three-name h4,
@@ -408,6 +465,7 @@ header {
     .item-four .item-five-name h4,
     .item-four .item-six-name h4,
     .item-four .item-seven-name h4,
+    .item-four .item-eight-name h4,
     .item-five .item-one-name h4,
     .item-five .item-two-name h4,
     .item-five .item-three-name h4,
@@ -415,6 +473,7 @@ header {
     .item-five .item-five-name h4,
     .item-five .item-six-name h4,
     .item-five .item-seven-name h4,
+    .item-five .item-eight-name h4,
     .item-six .item-one-name h4,
     .item-six .item-two-name h4,
     .item-six .item-three-name h4,
@@ -422,13 +481,23 @@ header {
     .item-six .item-five-name h4,
     .item-six .item-six-name h4,
     .item-six .item-seven-name h4,
+    .item-six .item-eight-name h4,
     .item-seven .item-one-name h4,
     .item-seven .item-two-name h4,
     .item-seven .item-three-name h4,
     .item-seven .item-four-name h4,
     .item-seven .item-five-name h4,
     .item-seven .item-six-name h4,
-    .item-seven .item-seven-name h4 {
+    .item-seven .item-seven-name h4,
+    .item-seven .item-eight-name h4,
+    .item-eight .item-one-name h4,
+    .item-eight .item-two-name h4,
+    .item-eight .item-three-name h4,
+    .item-eight .item-four-name h4,
+    .item-eight .item-five-name h4,
+    .item-eight .item-six-name h4,
+    .item-eight .item-seven-name h4,
+    .item-eight .item-eight-name h4 {
       font-size: 2.5rem;
       letter-spacing: 8px;
       font-family: "Proxima nova", sans-serif;
@@ -443,6 +512,7 @@ header {
     .item-one .item-five-name p,
     .item-one .item-six-name p,
     .item-one .item-seven-name p,
+    .item-one .item-eight-name p,
     .item-two .item-one-name p,
     .item-two .item-two-name p,
     .item-two .item-three-name p,
@@ -450,6 +520,7 @@ header {
     .item-two .item-five-name p,
     .item-two .item-six-name p,
     .item-two .item-seven-name p,
+    .item-two .item-eight-name p,
     .item-three .item-one-name p,
     .item-three .item-two-name p,
     .item-three .item-three-name p,
@@ -457,6 +528,7 @@ header {
     .item-three .item-five-name p,
     .item-three .item-six-name p,
     .item-three .item-seven-name p,
+    .item-three .item-eight-name p,
     .item-four .item-one-name p,
     .item-four .item-two-name p,
     .item-four .item-three-name p,
@@ -464,6 +536,7 @@ header {
     .item-four .item-five-name p,
     .item-four .item-six-name p,
     .item-four .item-seven-name p,
+    .item-four .item-eight-name p,
     .item-five .item-one-name p,
     .item-five .item-two-name p,
     .item-five .item-three-name p,
@@ -471,6 +544,7 @@ header {
     .item-five .item-five-name p,
     .item-five .item-six-name p,
     .item-five .item-seven-name p,
+    .item-five .item-eight-name p,
     .item-six .item-one-name p,
     .item-six .item-two-name p,
     .item-six .item-three-name p,
@@ -478,13 +552,23 @@ header {
     .item-six .item-five-name p,
     .item-six .item-six-name p,
     .item-six .item-seven-name p,
+    .item-six .item-eight-name p,
     .item-seven .item-one-name p,
     .item-seven .item-two-name p,
     .item-seven .item-three-name p,
     .item-seven .item-four-name p,
     .item-seven .item-five-name p,
     .item-seven .item-six-name p,
-    .item-seven .item-seven-name p {
+    .item-seven .item-seven-name p,
+    .item-seven .item-eight-name p,
+    .item-eight .item-one-name p,
+    .item-eight .item-two-name p,
+    .item-eight .item-three-name p,
+    .item-eight .item-four-name p,
+    .item-eight .item-five-name p,
+    .item-eight .item-six-name p,
+    .item-eight .item-seven-name p,
+    .item-eight .item-eight-name p {
       font-size: 1.5em;
       font-family: "Poiret One", cursive;
       color: #7a838c;
@@ -497,7 +581,8 @@ header {
 .item-four:hover > .item-four-name,
 .item-five:hover > .item-five-name,
 .item-six:hover > .item-six-name,
-.item-seven:hover > .item-seven-name {
+.item-seven:hover > .item-seven-name,
+.item-eight:hover > .item-eight-name {
   height: 100%;
   top: 0;
   transition: .3s; }
@@ -508,7 +593,8 @@ header {
 .item-four:hover > .item-four-name .right,
 .item-five:hover > .item-five-name .right,
 .item-six:hover > .item-six-name .right,
-.item-seven:hover > .item-seven-name .right {
+.item-seven:hover > .item-seven-name .right,
+.item-eight:hover > .item-eight-name .right {
   width: 15%;
   transition: .3s; }
 
@@ -538,6 +624,10 @@ header {
 
 .item-seven {
   background: url("../media/item-seven.jpg") center top;
+  background-size: cover; }
+
+.item-eight {
+  background: url("../media/item-eight.jpg") center bottom;
   background-size: cover; }
 
 .info-bottom {
@@ -701,7 +791,7 @@ footer {
   width: 100%;
   padding: 100px 0;
   position: relative;
-  height: 3190px; }
+  height: 3660px; }
 
 .catalogue-item::after,
 .item-div::after {
@@ -718,15 +808,14 @@ footer {
 .item-back {
   position: absolute;
   width: 100%;
-  height: 2250px;
   z-index: 10; }
 
 .elements-left-to-right {
   max-width: 1370px;
   margin: 0 auto 100px; }
 
-.elements-left-to-right:last-child {
-  margin: 0 auto; }
+.elements-right-to-left:last-child {
+  margin-bottom: 0; }
 
 .elements-right-to-left {
   max-width: 1370px;
@@ -819,6 +908,9 @@ footer {
 
 .cap {
   background: url("../media/item-seven.jpg") center; }
+
+.handcarts {
+  background: url("../media/item-eight.jpg"); }
 
 .pre-footer {
   width: 100%;
@@ -1346,10 +1438,7 @@ footer {
         main .info-div .info-div-img .info-div-text h1 {
           font-size: 3rem;
           letter-spacing: 7px;
-          padding: 0 calc(20px + 5vw);
           line-height: 100%; }
-        main .info-div .info-div-img .info-div-text h3 {
-          padding: 20px calc(20px + 5vw) 0; }
   main .menu-promo {
     background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y; }
     main .menu-promo .brand-description {
@@ -1365,7 +1454,8 @@ footer {
       main .menu-promo .menu-section .item-four,
       main .menu-promo .menu-section .item-five,
       main .menu-promo .menu-section .item-six,
-      main .menu-promo .menu-section .item-seven {
+      main .menu-promo .menu-section .item-seven,
+      main .menu-promo .menu-section .item-eight {
         height: 350px;
         margin-left: 20vw;
         width: 85%; }
@@ -1375,7 +1465,8 @@ footer {
       main .menu-promo .menu-section .item-four-name,
       main .menu-promo .menu-section .item-five-name,
       main .menu-promo .menu-section .item-six-name,
-      main .menu-promo .menu-section .item-seven-name {
+      main .menu-promo .menu-section .item-seven-name,
+      main .menu-promo .menu-section .item-eight-name {
         width: 70%;
         padding: 0; }
         main .menu-promo .menu-section .item-one-name .left,
@@ -1384,7 +1475,8 @@ footer {
         main .menu-promo .menu-section .item-four-name .left,
         main .menu-promo .menu-section .item-five-name .left,
         main .menu-promo .menu-section .item-six-name .left,
-        main .menu-promo .menu-section .item-seven-name .left {
+        main .menu-promo .menu-section .item-seven-name .left,
+        main .menu-promo .menu-section .item-eight-name .left {
           padding: 20px 0 20px calc(20px + 5vw); }
         main .menu-promo .menu-section .item-one-name h4,
         main .menu-promo .menu-section .item-two-name h4,
@@ -1392,7 +1484,8 @@ footer {
         main .menu-promo .menu-section .item-four-name h4,
         main .menu-promo .menu-section .item-five-name h4,
         main .menu-promo .menu-section .item-six-name h4,
-        main .menu-promo .menu-section .item-seven-name h4 {
+        main .menu-promo .menu-section .item-seven-name h4,
+        main .menu-promo .menu-section .item-eight-name h4 {
           font-size: 2.25rem;
           letter-spacing: 6px; }
         main .menu-promo .menu-section .item-one-name p,
@@ -1401,7 +1494,8 @@ footer {
         main .menu-promo .menu-section .item-four-name p,
         main .menu-promo .menu-section .item-five-name p,
         main .menu-promo .menu-section .item-six-name p,
-        main .menu-promo .menu-section .item-seven-name p {
+        main .menu-promo .menu-section .item-seven-name p,
+        main .menu-promo .menu-section .item-eight-name p {
           font-size: 1.25em;
           margin-top: 10px; }
   main .info-bottom {
@@ -1447,7 +1541,7 @@ footer {
     margin: 0 auto 50px; }
 
   .catalogue-item {
-    height: 2540px; }
+    height: 2910px; }
     .catalogue-item .elements {
       display: flex;
       height: 320px;
@@ -1567,18 +1661,17 @@ footer {
         width: 80%;
         margin-top: 195px;
         margin-left: 10%;
-        padding: 40px;
         box-sizing: border-box;
         left: 0;
         bottom: auto; }
         main .info-div .info-div-img .info-div-text h1 {
           font-size: 1.5rem;
           letter-spacing: 4px;
-          padding: 0; }
+          padding: 0;
+          margin-bottom: 10px; }
         main .info-div .info-div-img .info-div-text h3 {
           font-size: 1.15rem;
-          padding: 0;
-          margin-top: 10px; }
+          padding: 0; }
   main .menu-promo {
     background: #1d3137 url(../media/pattern-left.svg) top left -160px/210px repeat-y; }
     main .menu-promo .brand-description {
@@ -1604,7 +1697,8 @@ footer {
       main .menu-promo .menu-section .item-four,
       main .menu-promo .menu-section .item-five,
       main .menu-promo .menu-section .item-six,
-      main .menu-promo .menu-section .item-seven {
+      main .menu-promo .menu-section .item-seven,
+      main .menu-promo .menu-section .item-eight {
         width: 90%;
         height: 176px;
         margin-left: 15vw; }
@@ -1614,20 +1708,23 @@ footer {
       main .menu-promo .menu-section .item-four-name,
       main .menu-promo .menu-section .item-five-name,
       main .menu-promo .menu-section .item-six-name,
-      main .menu-promo .menu-section .item-seven-name {
+      main .menu-promo .menu-section .item-seven-name,
+      main .menu-promo .menu-section .item-eight-name {
         width: 80%;
         height: 65%;
         left: -15%;
         padding: 0;
         margin: 0;
-        top: 35%; }
+        top: 35%;
+        opacity: .9; }
         main .menu-promo .menu-section .item-one-name .left,
         main .menu-promo .menu-section .item-two-name .left,
         main .menu-promo .menu-section .item-three-name .left,
         main .menu-promo .menu-section .item-four-name .left,
         main .menu-promo .menu-section .item-five-name .left,
         main .menu-promo .menu-section .item-six-name .left,
-        main .menu-promo .menu-section .item-seven-name .left {
+        main .menu-promo .menu-section .item-seven-name .left,
+        main .menu-promo .menu-section .item-eight-name .left {
           width: 90%;
           padding: 10px;
           box-sizing: border-box; }
@@ -1637,7 +1734,8 @@ footer {
         main .menu-promo .menu-section .item-four-name .right,
         main .menu-promo .menu-section .item-five-name .right,
         main .menu-promo .menu-section .item-six-name .right,
-        main .menu-promo .menu-section .item-seven-name .right {
+        main .menu-promo .menu-section .item-seven-name .right,
+        main .menu-promo .menu-section .item-eight-name .right {
           width: 10%;
           text-align: left;
           font-size: 1.125rem; }
@@ -1647,7 +1745,8 @@ footer {
         main .menu-promo .menu-section .item-four-name h4,
         main .menu-promo .menu-section .item-five-name h4,
         main .menu-promo .menu-section .item-six-name h4,
-        main .menu-promo .menu-section .item-seven-name h4 {
+        main .menu-promo .menu-section .item-seven-name h4,
+        main .menu-promo .menu-section .item-eight-name h4 {
           font-size: 1.125rem;
           letter-spacing: 4px; }
         main .menu-promo .menu-section .item-one-name p,
@@ -1656,7 +1755,8 @@ footer {
         main .menu-promo .menu-section .item-four-name p,
         main .menu-promo .menu-section .item-five-name p,
         main .menu-promo .menu-section .item-six-name p,
-        main .menu-promo .menu-section .item-seven-name p {
+        main .menu-promo .menu-section .item-seven-name p,
+        main .menu-promo .menu-section .item-eight-name p {
           font-size: 1em;
           margin-top: 5px; }
   main .info-bottom {
@@ -1835,7 +1935,8 @@ footer {
   main .menu-promo .menu-section .item-four-name,
   main .menu-promo .menu-section .item-five-name,
   main .menu-promo .menu-section .item-six-name,
-  main .menu-promo .menu-section .item-seven-name {
+  main .menu-promo .menu-section .item-seven-name,
+  main .menu-promo .menu-section .item-eight-name {
     width: 60%;
     padding-left: 5vw; }
   main .catalogue-item .elements .wide {
@@ -1864,7 +1965,7 @@ footer {
     padding: 50px 0; }
     .item-group a {
       height: 300px; } }
-@media screen and (max-width: 413px) {
+@media screen and (max-width: 415px) {
   header .logo-ico {
     font-size: 2rem;
     padding: 20px 0; }
@@ -1874,13 +1975,16 @@ footer {
 
   .item-back .item-div-img .item-div-text {
     width: 90%;
-    height: 80%;
+    height: 85%;
     left: 5%;
-    bottom: -55%; }
+    bottom: -60%; }
     .item-back .item-div-img .item-div-text .table-d.left {
       width: 55%;
       font-size: .9rem; }
     .item-back .item-div-img .item-div-text .table-d.right {
       font-size: .9rem; } }
+@media screen and (max-width: 350px) {
+  .item-back .item-div-img .item-div-text .table-d.left {
+    font-size: .8rem; } }
 
 /*# sourceMappingURL=main.css.map */
