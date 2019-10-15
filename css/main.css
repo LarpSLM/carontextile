@@ -1366,7 +1366,10 @@ footer {
     display: inline-block;
     position: relative;
     width: 70%;
-    height: auto; }
+    height: auto;
+    cursor: pointer; }
+    .item-back .item-div-img a {
+      text-decoration: none; }
     .item-back .item-div-img figure {
       visibility: hidden; }
     .item-back .item-div-img img {
