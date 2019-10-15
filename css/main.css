@@ -65,7 +65,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -100;
+    z-index: 0;
     opacity: 0;
     transition: .3s; }
     header .menu .menu-img {
@@ -172,7 +172,7 @@ header {
 .menu.active {
   opacity: 1;
   transition: .3s;
-  z-index: 100; }
+  z-index: 500; }
 
 .menu-promo {
   background: #1d3137 url(../media/pattern-left.svg) top left/460px repeat-y;
@@ -1389,7 +1389,8 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: left; }
+      text-align: left;
+      z-index: 10; }
       .item-back .item-div-img .item-div-text .table-r {
         display: flex;
         justify-content: space-around;
@@ -1872,7 +1873,7 @@ footer {
 
   .item-div {
     padding: 0 0 50px 0;
-    height: 75vw; }
+    height: 85vw; }
 
   .item-back {
     width: calc(100% - 40px);
