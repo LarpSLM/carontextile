@@ -65,7 +65,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
     opacity: 0;
     transition: .3s; }
     header .menu .menu-img {
@@ -1114,10 +1114,6 @@ footer {
   background: url("../media/hangers-one-small.jpg") center no-repeat;
   background-size: cover; }
 
-.hangers-winter {
-  background: url("../media/hangers-winter-small.jpg") center no-repeat;
-  background-size: cover; }
-
 .hangers-44-46a {
   background: url("../media/hangers-44-46a-small.jpg") center no-repeat;
   background-size: cover; }
@@ -1246,6 +1242,10 @@ footer {
   background: url("../media/woman-body-twelve-small.jpg") center no-repeat;
   background-size: cover; }
 
+.woman-body-thirteen {
+  background: url("../media/mannequins-alice-silver-small.jpg") center no-repeat;
+  background-size: cover; }
+
 .woman-head-one {
   background: url("../media/woman-head-one-small.jpg") center no-repeat;
   background-size: cover; }
@@ -1354,6 +1354,10 @@ footer {
   background: url("../media/cap-red-small.jpg") center no-repeat;
   background-size: cover; }
 
+.handcarts-darkblue {
+  background: url("../media/handcarts-darkblue-small.jpg") center no-repeat;
+  background-size: cover; }
+
 .item-div {
   background: none;
   padding: 0 0 100px 0;
@@ -1399,6 +1403,14 @@ footer {
         justify-content: space-around;
         width: 100%;
         margin: .5vw 0; }
+        .item-back .item-div-img .item-div-text .table-r p {
+          font-family: "Proxima nova", sans-serif;
+          color: #1d3137;
+          font-weight: bold;
+          font-size: 1.45rem;
+          padding: 0 5vw;
+          line-height: 150%;
+          box-sizing: border-box; }
       .item-back .item-div-img .item-div-text .table-d {
         display: inline-block;
         font-weight: bold; }
@@ -1598,10 +1610,12 @@ footer {
       .item-back .item-div-img .item-div-text {
         width: 60%;
         left: -20vw; }
+        .item-back .item-div-img .item-div-text .table-r p {
+          font-size: 1.125rem; }
         .item-back .item-div-img .item-div-text .table-d.left {
           font-size: 1.125rem; }
         .item-back .item-div-img .item-div-text .table-d.right {
-          width: 20%;
+          width: 30%;
           font-size: 1.125rem; }
 
   footer {
@@ -1876,7 +1890,7 @@ footer {
 
   .item-div {
     padding: 0 0 50px 0;
-    height: 85vw; }
+    height: 70vw; }
 
   .item-back {
     width: calc(100% - 40px);
@@ -1892,6 +1906,9 @@ footer {
         bottom: -45%; }
         .item-back .item-div-img .item-div-text .table-r {
           margin: 0; }
+          .item-back .item-div-img .item-div-text .table-r p {
+            font-size: 1rem;
+            padding: 0 20px; }
         .item-back .item-div-img .item-div-text .table-d.left {
           font-size: 1rem; }
         .item-back .item-div-img .item-div-text .table-d.right {
@@ -1988,6 +2005,8 @@ footer {
     .item-back .item-div-img .item-div-text .table-d.right {
       font-size: .9rem; } }
 @media screen and (max-width: 350px) {
+  .item-back .item-div-img .item-div-text .table-r p {
+    font-size: 0.9rem; }
   .item-back .item-div-img .item-div-text .table-d.left {
     font-size: .8rem; } }
 
