@@ -1,12 +1,3 @@
-// document.addEventListener('click',  event => {
-//     if (event.target.classList.contains('menu-bottom')) {
-//         if (event.target.classList.contains('actiive')) {
-//             event.target.classList.remove('active');
-//         } else {
-//             event.target.classList.add('active')
-//         }
-//     }
-// });
 
 function menuActive() {
     let menu = document.getElementById('menu');
@@ -19,3 +10,6 @@ function menuActive() {
         logoIco.classList.add('active');
     }
 }
+
+let menuButton = document.getElementById('menu-button');
+menuButton.addEventListener('click', menuActive);
