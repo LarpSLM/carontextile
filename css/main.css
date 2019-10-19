@@ -1823,9 +1823,10 @@ footer {
           font-size: 1.125rem; } }
 @media screen and (max-width: 760px) {
   header .logo-ico {
-    width: 120px;
-    height: 60px;
-    padding: 0px; }
+    width: 145px;
+    height: 75px;
+    padding: 0;
+    margin-top: 5px; }
   header .menu-bottom {
     right: 0;
     height: auto; }
