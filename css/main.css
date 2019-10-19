@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*╤Б╨╕╨╜╨╕╨╣ ╨│╤А╨░╨┤╨╕╨╡╨╜╤В:
 linear-gradient(90deg, #0d1333, #132974)
+#ededed - colorFive;
 
  */
 @font-face {
@@ -21,16 +22,16 @@ header {
   position: relative;
   padding: 0 20px; }
   header .logo-ico {
+    display: block;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 295px;
+    height: 150px;
     text-decoration: none;
-    font-size: 3rem;
-    padding: 20px;
-    color: #c4aa74;
-    font-family: "Monotype Corsiva", sans-serif;
     position: absolute;
-    z-index: 999; }
-    header .logo-ico h3 {
-      display: inline-block;
-      margin: 0; }
+    z-index: 999;
+    background: url("../media/logo.png") bottom left no-repeat;
+    background-size: contain; }
   header .logo-ico.active {
     position: fixed; }
   header .menu-bottom {
@@ -39,7 +40,7 @@ header {
     top: 0;
     height: 120px;
     width: 66px;
-    background: #1e3e48;
+    background: #0d1333;
     text-align: center;
     z-index: 999;
     cursor: pointer; }
@@ -76,7 +77,7 @@ header {
       background-size: cover; }
     header .menu .menu-item {
       float: right;
-      background: #1d3137;
+      background: linear-gradient(90deg, #0d1333, #132974);
       width: 65vw;
       height: 100vh; }
 
@@ -141,7 +142,7 @@ header {
     float: right;
     height: 650px;
     width: 70%;
-    background: url("../media/info-div-img.jpg") center;
+    background: url("../media/pipe-tape-100-small.jpg") center;
     background-size: cover; }
   .info-div .info-div-text {
     position: absolute;
@@ -161,9 +162,9 @@ header {
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
       margin-bottom: 20px;
-      color: #1d3137;
+      color: #0d1333;
       font-weight: bold;
-      text-shadow: 0 0 0 #1d3137;
+      text-shadow: 0 0 0 #0d1333;
       line-height: 110%; }
     .info-div .info-div-text h3 {
       font-size: 1.5em;
@@ -176,7 +177,7 @@ header {
   z-index: 500; }
 
 .menu-promo {
-  background: #1d3137 url(../media/pattern-left.svg) top left/460px repeat-y;
+  background: linear-gradient(90deg, #0d1333, #132974);
   color: #7a838c; }
   .menu-promo .brand-description {
     width: 60%;
@@ -503,9 +504,9 @@ header {
       letter-spacing: 8px;
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
-      color: #1d3137;
+      color: #0d1333;
       font-weight: bold;
-      text-shadow: 0 0 0 #1d3137; }
+      text-shadow: 0 0 0 #0d1333; }
     .item-one .item-one-name p,
     .item-one .item-two-name p,
     .item-one .item-three-name p,
@@ -635,7 +636,7 @@ header {
   width: 100%;
   padding: 60px 0;
   box-sizing: border-box;
-  background: #1d3137;
+  background: linear-gradient(90deg, #0d1333, #132974);
   height: 320px;
   text-align: center; }
   .info-bottom .info-bottom-border {
@@ -672,7 +673,7 @@ header {
     transition: .2s; }
 
 footer {
-  background: #1d3137;
+  background: linear-gradient(90deg, #0d1333, #132974);
   width: 100%;
   height: 350px; }
   footer .footer-all {
@@ -707,7 +708,7 @@ footer {
       letter-spacing: 2px;
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
-      color: #1d3137;
+      color: #0d1333;
       font-weight: bold; }
   footer .footer-right-top {
     text-align: right; }
@@ -715,7 +716,7 @@ footer {
       display: inline-block;
       text-decoration: none;
       font-size: 2.5rem;
-      color: #1d3137;
+      color: #0d1333;
       margin-left: calc(20px + 1vw); }
   footer .footer-left-bottom,
   footer .footer-right-bottom {
@@ -757,9 +758,9 @@ footer {
       letter-spacing: 8px;
       font-family: "Proxima nova", sans-serif;
       text-transform: uppercase;
-      color: #1d3137;
+      color: #0d1333;
       font-weight: bold;
-      text-shadow: 0 0 0 #1d3137;
+      text-shadow: 0 0 0 #0d1333;
       line-height: 110%;
       padding: 0 0 20px 10%; }
     .catalogue .catalogue-title .left,
@@ -788,7 +789,7 @@ footer {
 
 .catalogue-item,
 .item-div {
-  background: #ededed;
+  background: #fffaf0;
   width: 100%;
   padding: 100px 0;
   position: relative;
@@ -882,7 +883,7 @@ footer {
       text-transform: uppercase;
       color: #fafafa;
       font-weight: bold;
-      background: #1d3137;
+      background: linear-gradient(90deg, #0d1333, #132974);
       text-align: center;
       line-height: 60px; }
     .elements .slim a:hover {
@@ -916,7 +917,7 @@ footer {
 .pre-footer {
   width: 100%;
   height: 100px;
-  background: #1d3137; }
+  background: linear-gradient(90deg, #0d1333, #132974); }
 
 .page-title {
   width: 100%;
@@ -929,9 +930,9 @@ footer {
     letter-spacing: 8px;
     font-family: "Proxima nova", sans-serif;
     text-transform: uppercase;
-    color: #1d3137;
+    color: #0d1333;
     font-weight: bold;
-    text-shadow: 0 0 0 #1d3137;
+    text-shadow: 0 0 0 #0d1333;
     line-height: 110%;
     padding-left: 10%;
     box-sizing: border-box; }
@@ -939,11 +940,11 @@ footer {
 .page-description {
   width: 100%;
   height: 450px;
-  background: #1d3137 url(../media/pattern-left.svg) top left/460px repeat-y;
+  background: linear-gradient(90deg, #0d1333, #132974);
   display: inline-flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px 5vw 20px 35vw;
+  padding: 50px 40px;
   box-sizing: border-box;
   text-align: justify; }
   .page-description p {
@@ -961,7 +962,7 @@ footer {
   justify-content: space-evenly;
   padding: 100px 0;
   box-sizing: border-box;
-  background: #ededed; }
+  background: #fffaf0; }
   .item-group a {
     text-decoration: none;
     width: 30%;
@@ -983,7 +984,7 @@ footer {
     height: auto;
     padding: 20px;
     box-sizing: border-box;
-    background: #1d3137;
+    background: linear-gradient(90deg, #0d1333, #132974);
     left: 10%;
     top: 90%;
     z-index: 10;
@@ -1406,7 +1407,7 @@ footer {
         margin: .5vw 0; }
         .item-back .item-div-img .item-div-text .table-r p {
           font-family: "Proxima nova", sans-serif;
-          color: #1d3137;
+          color: #0d1333;
           font-weight: bold;
           font-size: 1.45rem;
           padding: 0 5vw;
@@ -1417,7 +1418,7 @@ footer {
         font-weight: bold; }
       .item-back .item-div-img .item-div-text .table-d.left {
         font-family: "Proxima nova", sans-serif;
-        color: #1d3137;
+        color: #0d1333;
         font-size: 1.45rem;
         text-align: right;
         width: 50%; }
@@ -1460,9 +1461,9 @@ footer {
     letter-spacing: 4px;
     font-family: "Proxima nova", sans-serif;
     text-transform: uppercase;
-    color: #1d3137;
+    color: #0d1333;
     font-weight: bold;
-    text-shadow: 0 0 0 #1d3137;
+    text-shadow: 0 0 0 #0d1333;
     margin: 5px 0; }
   .info .left {
     display: inline-block;
@@ -1497,7 +1498,7 @@ footer {
     .map-message .message label {
       display: block;
       font-family: "Proxima nova", sans-serif;
-      color: #1d3137;
+      color: #0d1333;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 1rem; }
@@ -1524,13 +1525,13 @@ footer {
       font-size: 1rem;
       text-transform: uppercase;
       font-family: "Proxima nova", sans-serif;
-      color: #1d3137;
+      color: #0d1333;
       font-weight: bold;
       margin: 0 auto;
       transition: .3s; }
     .map-message .message .send:hover {
       border: none;
-      background: #1d3137;
+      background: linear-gradient(90deg, #0d1333, #132974);
       color: #c4aa74;
       transition: .3s; }
 
@@ -1545,9 +1546,9 @@ footer {
     letter-spacing: 4px;
     font-family: "Proxima nova", sans-serif;
     text-transform: uppercase;
-    color: #1d3137;
+    color: #0d1333;
     font-weight: bold;
-    text-shadow: 0 0 0 #1d3137;
+    text-shadow: 0 0 0 #0d1333;
     line-height: 110%;
     margin-bottom: 20px; }
   .description-company p {
@@ -1574,7 +1575,7 @@ footer {
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-around;
-  background: #ededed;
+  background: #fffaf0;
   padding: 50px 0;
   box-sizing: border-box; }
   .diploma img {
@@ -1584,8 +1585,8 @@ footer {
 
 @media (min-width: 761px) and (max-width: 1215px) {
   header .logo-ico {
-    font-size: 2.2rem;
-    padding: 20px; }
+    width: 200px;
+    height: 80px; }
   header .menu-bottom {
     right: 30px; }
   header .menu-bottom:hover i {
@@ -1612,7 +1613,7 @@ footer {
           letter-spacing: 7px;
           line-height: 100%; }
   main .menu-promo {
-    background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y; }
+    background: linear-gradient(90deg, #0d1333, #132974); }
     main .menu-promo .brand-description {
       height: 350px;
       margin-left: 30vw; }
@@ -1746,8 +1747,7 @@ footer {
 
   .page-description {
     height: auto;
-    background: #1d3137 url(../media/pattern-left.svg) top left -68px/210px repeat-y;
-    padding: 20px 5vw 20px 25vw; }
+    background: linear-gradient(90deg, #0d1333, #132974); }
     .page-description p {
       font-size: 1.25rem; }
 
@@ -1823,8 +1823,9 @@ footer {
           font-size: 1.125rem; } }
 @media screen and (max-width: 760px) {
   header .logo-ico {
-    font-size: 2.2rem;
-    padding: 20px; }
+    width: 120px;
+    height: 60px;
+    padding: 0px; }
   header .menu-bottom {
     right: 0;
     height: auto; }
@@ -1864,7 +1865,7 @@ footer {
           font-size: 1.15rem;
           padding: 0; }
   main .menu-promo {
-    background: #1d3137 url(../media/pattern-left.svg) top left -160px/210px repeat-y; }
+    background: linear-gradient(90deg, #0d1333, #132974); }
     main .menu-promo .brand-description {
       width: 80%;
       margin-left: 20vw;
@@ -2049,7 +2050,7 @@ footer {
       letter-spacing: 4px; }
 
   .page-description {
-    background: #1d3137 url(../media/pattern-left.svg) top left -160px/210px repeat-y;
+    background: linear-gradient(90deg, #0d1333, #132974) url(../media/pattern-left.svg) top left -160px/210px repeat-y;
     padding: 20px 20px 20px 20vw;
     height: auto; }
     .page-description p {
@@ -2231,10 +2232,6 @@ footer {
       width: 70%;
       margin: 0 auto; } }
 @media screen and (max-width: 415px) {
-  header .logo-ico {
-    font-size: 2rem;
-    padding: 20px 0; }
-
   .item-img .item-description h4 {
     font-size: 1rem; }
 
