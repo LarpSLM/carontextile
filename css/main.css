@@ -1561,11 +1561,17 @@ footer {
     text-shadow: 0 0 0 #7a838c;
     text-align: justify;
     margin-bottom: 20px; }
-  .description-company img {
+  .description-company .history img {
     width: 100%;
-    margin-bottom: 20px; }
-  .description-company .today img {
-    width: 100%; }
+    margin-bottom: 10px; }
+  .description-company .today .img-left {
+    display: inline-block;
+    width: calc(50% - 22px);
+    margin-right: 20px; }
+  .description-company .today .img-right {
+    display: inline-block;
+    width: calc(50% - 22px);
+    margin-left: 20px; }
 
 .diploma {
   display: flex;
@@ -1783,7 +1789,7 @@ footer {
     width: 40%; }
 
   .description-company {
-    padding: 20px 40px; }
+    padding: 40px; }
 
   .diploma {
     padding: 50px 40px;
@@ -2128,8 +2134,14 @@ footer {
   .description-company p {
     font-size: 1.125rem;
     margin-bottom: 10px; }
-  .description-company img {
-    margin-bottom: 10px; }
+  .description-company .today .img-left {
+    display: inline-block;
+    width: calc(50% - 12px);
+    margin-right: 10px; }
+  .description-company .today .img-right {
+    display: inline-block;
+    width: calc(50% - 12px);
+    margin-left: 10px; }
 
   .diploma img {
     width: 40%;
