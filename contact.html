@@ -73,16 +73,16 @@
         <div class="map">
             <iframe src="https://www.google.com/maps/d/embed?mid=1bGk3EazN7n2BGICLmTpGps55PyiHr_GZ" width="100%" height="480"></iframe>
         </div><div class="message">
-        <form action="">
+        <form method="post" action="/php/feedback.php" enctype="multipart/form-data">
             <label for="name">Имя*</label>
-            <input id="name" autofocus required pattern="\[A-Za-zА-Яа-яЁ-ё]">
+            <input name="name" id="name" autofocus required pattern="\[A-Za-zА-Яа-яЁ-ё]">
             <label for="phone">Телефон</label>
-            <input id="phone" autofocus  pattern="\[0-9]">
+            <input name="phone" id="phone" autofocus  pattern="\[0-9]">
             <label for="e-mail">Адрес почты*</label>
-            <input id="e-mail" autofocus required>
+            <input name="e-mail" id="e-mail" autofocus required>
             <label for="question">Сообщение*</label>
-            <textarea name="" id="question" cols="30" rows="10"></textarea>
-            <input type="submit" class="send">
+            <textarea name="question" id="question" cols="30" rows="10"></textarea>
+            <input type="submit" class="send" value="Отправить сообщение">
         </form>
         </div>
     </section>
