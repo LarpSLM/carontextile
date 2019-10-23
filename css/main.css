@@ -767,7 +767,9 @@ footer {
       padding: 0 0 20px 10%; }
     .catalogue .catalogue-title .left,
     .catalogue .catalogue-title .right {
-      display: inline-block;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
       width: 50%;
       height: 150px;
       vertical-align: top;
@@ -784,9 +786,8 @@ footer {
       font-size: 1.5em;
       font-family: "Poiret One", cursive;
       color: #7a838c;
-      padding: 50px;
+      padding: 0 50px;
       box-sizing: border-box;
-      height: 150px;
       font-weight: bold; }
 
 .catalogue-item,
@@ -941,7 +942,7 @@ footer {
 
 .page-description {
   width: 100%;
-  height: 450px;
+  min-height: 300px;
   background: linear-gradient(90deg, #0d1333, #132974);
   display: inline-flex;
   flex-direction: column;
@@ -1258,6 +1259,10 @@ footer {
   background: url("../media/woman-head-two-small.jpg") center no-repeat;
   background-size: cover; }
 
+.woman-head-white {
+  background: url("../media/mannequins-woman-head-white-small.jpg") center no-repeat;
+  background-size: cover; }
+
 .woman-foot-one {
   background: url("../media/woman-foot-one-small.jpg") center no-repeat;
   background-size: cover; }
@@ -1367,6 +1372,9 @@ footer {
   padding: 0 0 100px 0;
   height: 40vw; }
 
+.item-div.bi-padding {
+  padding: 100px 0; }
+
 .item-back {
   text-align: right;
   height: auto; }
@@ -1415,6 +1423,9 @@ footer {
           padding: 0 5vw;
           line-height: 150%;
           box-sizing: border-box; }
+        .item-back .item-div-img .item-div-text .table-r .item-tth {
+          font-family: "Poiret One", cursive;
+          color: #7a838c; }
       .item-back .item-div-img .item-div-text .table-d {
         display: inline-block;
         font-weight: bold; }
@@ -1699,8 +1710,6 @@ footer {
       padding: 20px 10%;
       font-size: 2.5rem; }
     .catalogue .catalogue-title p {
-      height: 100px;
-      padding: 30px 50px;
       font-size: 1.25rem; }
     .catalogue .catalogue-title .left,
     .catalogue .catalogue-title .right {
@@ -1749,11 +1758,8 @@ footer {
     .page-title h1 {
       font-size: 3rem; }
 
-  .page-description {
-    height: auto;
-    background: linear-gradient(90deg, #0d1333, #132974); }
-    .page-description p {
-      font-size: 1.25rem; }
+  .page-description p {
+    font-size: 1.25rem; }
 
   .item-group {
     padding: 50px 0; }
@@ -1874,10 +1880,7 @@ footer {
     main .menu-promo .brand-description {
       width: 80%;
       margin-left: 20vw;
-      height: 315px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center; }
+      height: 315px; }
       main .menu-promo .brand-description h4 {
         font-size: 1.5rem;
         margin-top: 0; }
@@ -1994,8 +1997,7 @@ footer {
       height: 80px; }
       main .catalogue .catalogue-title .right p {
         font-size: 1.125rem;
-        padding: 20px;
-        height: 80px; }
+        padding: 0 20px; }
   main .catalogue-item {
     padding: 50px 0;
     height: auto;
@@ -2055,9 +2057,7 @@ footer {
       letter-spacing: 4px; }
 
   .page-description {
-    background: linear-gradient(90deg, #0d1333, #132974) url(../media/pattern-left.svg) top left -160px/210px repeat-y;
-    padding: 20px 20px 20px 20vw;
-    height: auto; }
+    padding: 20px; }
     .page-description p {
       font-size: 1.125rem; }
 
@@ -2070,6 +2070,9 @@ footer {
   .item-div {
     padding: 0 0 50px 0;
     height: 70vw; }
+
+  .item-div.bi-padding {
+    padding: 50px 0; }
 
   .item-back {
     width: calc(100% - 40px);
@@ -2086,7 +2089,7 @@ footer {
         .item-back .item-div-img .item-div-text .table-r {
           margin: 0; }
           .item-back .item-div-img .item-div-text .table-r p {
-            font-size: 1rem;
+            font-size: .9rem;
             padding: 0 20px; }
         .item-back .item-div-img .item-div-text .table-d.left {
           font-size: 1rem; }
@@ -2251,7 +2254,7 @@ footer {
     width: 90%;
     height: 85%;
     left: 5%;
-    bottom: -60%; }
+    bottom: -65%; }
     .item-back .item-div-img .item-div-text .table-d.left {
       width: 55%;
       font-size: .9rem; }
@@ -2264,6 +2267,9 @@ footer {
     font-size: .8rem; }
 
   .info-company p {
-    font-size: 1.25rem; } }
+    font-size: 1.25rem; }
+
+  main .catalogue .catalogue-title .right p {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */
