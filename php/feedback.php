@@ -8,10 +8,10 @@ require 'lib/PHPMailer.php';
 require 'lib/SMTP.php';
 
 //$RECIPIENT =  'LarposaSLM@mail.ru'
-$FROM = 'site-feedback@carontextile.ru';
+$FROM = 'feedback.dl@carontextile.ru';
 $FROM_NAME = 'Caron Textile (Форма обратной связи)';
 
-$RECIPIENT =  'feedback.dl@yandex.ru';
+$RECIPIENT =  'larposa@yandex.ru';
 $RECIPIENT_NAME = 'Caron Textile';
 
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
@@ -28,7 +28,7 @@ try {
     $mail->SMTPAuth = true;                        // Enable SMTP authentication
     $mail->Username = 'feedback.dl@yandex.ru';                 			// SMTP username
     $mail->Password = 'deadlockslm1';                           // SMTP password
-    $mail->SMTPSecure = 'SSL';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
     
     $mail->SMTPOptions = array(
