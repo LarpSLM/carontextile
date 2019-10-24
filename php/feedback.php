@@ -11,7 +11,7 @@ require 'lib/SMTP.php';
 $FROM = 'feedback.dl@yandex.ru';
 $FROM_NAME = 'Caron Textile (Форма обратной связи)';
 
-$RECIPIENT =  'larposa@yandex.ru';
+$RECIPIENT =  '6499076@mail.ru';
 $RECIPIENT_NAME = 'Caron Textile';
 
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
