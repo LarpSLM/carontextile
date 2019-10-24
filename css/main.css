@@ -1387,6 +1387,31 @@ footer {
   background: url("../media/handcarts-darkblue-small.jpg") center no-repeat;
   background-size: cover; }
 
+.send-status {
+  max-width: 1170px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Poiret One", cursive;
+  color: #7a838c;
+  margin: 0 auto;
+  padding: 40vh 0 50px 0; }
+
+.gotoback {
+  display: block;
+  height: 55px;
+  width: 270px;
+  color: #fafafa;
+  margin: 0 auto;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: "Proxima nova", sans-serif;
+  background: #0d1333;
+  font-weight: bold;
+  text-align: center;
+  line-height: 55px; }
+
 .item-div {
   background: none;
   padding: 0 0 100px 0;

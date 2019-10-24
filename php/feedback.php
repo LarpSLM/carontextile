@@ -7,7 +7,7 @@ require 'lib/Exception.php';
 require 'lib/PHPMailer.php';
 require 'lib/SMTP.php';
 
-//$RECIPIENT =  'LarposaSLM@mail.ru'
+
 $FROM = 'feedback.dl@yandex.ru';
 $FROM_NAME = 'Caron Textile (Форма обратной связи)';
 
@@ -27,7 +27,7 @@ try {
     $mail->Host = 'smtp.yandex.ru';						// Specify main and backup SMTP servers
     $mail->SMTPAuth = true;                        // Enable SMTP authentication
     $mail->Username = 'feedback.dl@yandex.ru';                 			// SMTP username
-    $mail->Password = 'deadlockslm1';                           // SMTP password
+    $mail->Password = 'europlastik3018';                           // SMTP password
     $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
     $mail->Port = 465;                                    // TCP port to connect to
     
