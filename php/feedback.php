@@ -8,7 +8,7 @@ require 'lib/PHPMailer.php';
 require 'lib/SMTP.php';
 
 //$RECIPIENT =  'LarposaSLM@mail.ru'
-$FROM = 'feedback.dl@carontextile.ru';
+$FROM = 'feedback.dl@yandex.ru';
 $FROM_NAME = 'Caron Textile (Форма обратной связи)';
 
 $RECIPIENT =  'larposa@yandex.ru';
