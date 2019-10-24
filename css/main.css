@@ -1263,6 +1263,26 @@ footer {
   background: url("../media/mannequins-woman-head-white-small.jpg") center no-repeat;
   background-size: cover; }
 
+.head-noface-black {
+  background: url("../media/head-noface-black-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.head-noface-white {
+  background: url("../media/head-noface-white-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.head-noface-skincolor {
+  background: url("../media/head-noface-skincolor-preview.jpg") center no-repeat;
+  background-size: cover; }
+
+.head-skincolor-blueeye {
+  background: url("../media/woman-head-skincolor-blueeye-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.head-skincolor-browneye {
+  background: url("../media/woman-head-skincolor-browneye-small.jpg") center no-repeat;
+  background-size: cover; }
+
 .woman-foot-one {
   background: url("../media/woman-foot-one-small.jpg") center no-repeat;
   background-size: cover; }
@@ -1440,6 +1460,30 @@ footer {
         color: #7a838c;
         font-size: 1.45rem;
         width: 30%; }
+
+.change-img {
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  top: 0;
+  display: flex;
+  flex-direction: column; }
+  .change-img .top,
+  .change-img .bottom {
+    height: 50%;
+    background: #fafafa;
+    border: 2px solid #7a838c;
+    cursor: pointer; }
+    .change-img .top i,
+    .change-img .bottom i {
+      font-size: 2.5rem;
+      transition: .2s;
+      color: #0d1333; }
+  .change-img .top:hover > i,
+  .change-img .bottom:hover > i {
+    color: #c4aa74;
+    transition: .2s; }
 
 .info-company {
   padding: 50px 0 0 10%;
