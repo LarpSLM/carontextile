@@ -7,11 +7,11 @@ require 'lib/Exception.php';
 require 'lib/PHPMailer.php';
 require 'lib/SMTP.php';
 
-//$RECIPIENT =  '6499076@mail.ru'
+//$RECIPIENT =  'LarposaSLM@mail.ru'
 $FROM = 'site-feedback@carontextile.ru';
 $FROM_NAME = 'Caron Textile (Форма обратной связи)';
 
-$RECIPIENT =  'cupofwonder@yandex.ru';
+$RECIPIENT =  'feedback.dl@yandex.ru';
 $RECIPIENT_NAME = 'Caron Textile';
 
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
@@ -24,12 +24,12 @@ try {
     //Server settings
     //$mail->SMTPDebug = 2; 
     $mail->isSMTP();                                // Set mailer to use SMTP
-    $mail->Host = 'localhost';						// Specify main and backup SMTP servers
-    $mail->SMTPAuth = false;                        // Enable SMTP authentication
-    $mail->Username = '';                 			// SMTP username
-    $mail->Password = '';                           // SMTP password
-//    $mail->SMTPSecure = 'starttls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 25;                                    // TCP port to connect to
+    $mail->Host = 'smtp.yandex.ru';						// Specify main and backup SMTP servers
+    $mail->SMTPAuth = true;                        // Enable SMTP authentication
+    $mail->Username = 'feedback.dl@yandex.ru';                 			// SMTP username
+    $mail->Password = 'deadlockslm1';                           // SMTP password
+    $mail->SMTPSecure = 'SSL';                            // Enable TLS encryption, `ssl` also accepted
+    $mail->Port = 465;                                    // TCP port to connect to
     
     $mail->SMTPOptions = array(
 		'ssl' => array(
