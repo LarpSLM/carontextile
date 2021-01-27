@@ -141,9 +141,26 @@ header {
     display: inline-block;
     float: right;
     height: 650px;
-    width: 70%;
-    background: url("../media/pipe-tape-100-small.jpg") center;
-    background-size: cover; }
+    width: 70%; }
+    .info-div .info-div-img .slider {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      transition: 1s; }
+    .info-div .info-div-img .slider.img-one {
+      background: url("../media/pipe-tape-100-small.jpg") center no-repeat;
+      background-size: cover; }
+    .info-div .info-div-img .slider.img-two {
+      background: url("../media/curtan-tapes-1038-O-small.jpg") center no-repeat;
+      background-size: cover; }
+    .info-div .info-div-img .slider.img-three {
+      background: url("../media/slider-img-three.jpg") center no-repeat;
+      background-size: cover; }
+    .info-div .info-div-img .shown {
+      opacity: 1; }
   .info-div .info-div-text {
     position: absolute;
     width: 550px;
@@ -209,6 +226,52 @@ header {
   background-color: #fafafa;
   height: auto;
   padding: 30px 0; }
+
+.notification {
+  display: block;
+  position: absolute;
+  width: 70%;
+  top: 10px;
+  left: 15%;
+  font-family: "Proxima nova", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #0d1333;
+  text-align: center;
+  padding: 0 20px 10px; }
+
+.news {
+  background: linear-gradient(90deg, #0d1333, #132974);
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: right; }
+
+.news-text {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 65%;
+  height: 100%;
+  padding: 0 50px 0 20px;
+  box-sizing: border-box; }
+  .news-text img {
+    width: 60%; }
+  .news-text p {
+    font-size: 1.75em;
+    font-family: "Proxima nova", sans-serif;
+    text-align: left; }
+  .news-text div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .news-text span {
+    color: #fafafa;
+    font-family: "Proxima nova", sans-serif;
+    font-size: 1.75em;
+    text-align: left;
+    margin: 0 0 1rem 0;
+    text-decoration: none; }
 
 .item-one,
 .item-two,
@@ -1091,12 +1154,24 @@ footer {
   background: url("../media/curtan-tapes-1005t-small.jpg") center no-repeat;
   background-size: cover; }
 
+.tape-1011 {
+  background: url("../media/curtain-tapes-1011-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.tape-1033-O {
+  background: url("../media/curtain-tapes-1033-0.jpg") center no-repeat;
+  background-size: cover; }
+
 .tape-1038 {
   background: url("../media/curtan-tapes-1038-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-1038-O {
   background: url("../media/curtan-tapes-1038-O-small.jpg") center no-repeat;
+  background-size: cover; }
+
+.tape-1088-O {
+  background: url("../media/curtain-tapes-1088-0-small.jpg") center no-repeat;
   background-size: cover; }
 
 .tape-1090 {
@@ -1776,6 +1851,21 @@ footer {
       main .info-bottom a p {
         font-size: 1.125em; }
 
+  .notification {
+    width: 60%;
+    left: 20%;
+    font-size: 1em; }
+
+  .news-text {
+    width: 60%;
+    padding: 0 20px; }
+    .news-text img {
+      width: 50%; }
+    .news-text p {
+      font-size: 1.5em; }
+    .news-text span {
+      font-size: 1.25em; }
+
   .catalogue {
     padding-top: 150px;
     background: url("../media/pattern-left.svg") top right/250px no-repeat; }
@@ -2052,6 +2142,22 @@ footer {
       border-bottom: 4px solid #7a838c;
       border-left: none;
       border-right: none; }
+
+  .notification {
+    display: none; }
+
+  .news-text {
+    width: 100%;
+    padding: 20px;
+    justify-content: start; }
+    .news-text img {
+      display: none; }
+    .news-text p {
+      font-size: 1em;
+      margin-bottom: 1em; }
+    .news-text span {
+      font-size: 1em;
+      margin: 0 .8em .8em 0; }
 
   main .catalogue {
     padding-top: 120px;

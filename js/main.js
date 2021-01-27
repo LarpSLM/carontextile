@@ -18,13 +18,45 @@ let upButton = document.getElementById('up-button');
 let downButton = document.getElementById('down-button');
 let imgOne = document.getElementById('item-img');
 
-function changeImgOne() {
-    imgOne.innerHTML = upButton.value;
+
+if (upButton !== null && downButton !== null) {
+    upButton.onclick = function changeImgOne() {
+        imgOne.innerHTML = upButton.value;
+    };
+
+    downButton.onclick = function changeImgTwo() {
+        imgOne.innerHTML = downButton.value;
+    };
 }
 
-function changeImgTwo() {
-    imgOne.innerHTML = downButton.value;
-}
 
-upButton.addEventListener('click', changeImgOne);
-downButton.addEventListener('click', changeImgTwo);
+
+
+// slider for index.html//
+
+window.onload = function(){
+
+    new Slider({
+        images: '.info-div .info-div-img .slider',
+        interval: '3000'
+    });
+
+    function Slider(images){
+
+        this.images = document.querySelectorAll(images.images);
+        this.interval = images.interval;
+
+        let i = 0;
+
+        this.next = function() {
+            this.images[i].classList.remove('shown');
+            i++;
+            if( i >= this.images.length){
+                i = 0;
+            }
+            this.images[i].classList.add('shown');
+        };
+
+        setInterval(this.next.bind(this), this.interval);
+    }
+};
