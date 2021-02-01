@@ -48,6 +48,10 @@ window.onload = function(){
 
         let i = 0;
 
+        if (this.images.length === 0) {
+            return;
+        }
+
         this.next = function() {
             this.images[i].classList.remove('shown');
             i++;

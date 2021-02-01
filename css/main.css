@@ -241,28 +241,22 @@ header {
   padding: 0 20px 10px; }
 
 .news {
-  background: linear-gradient(90deg, #0d1333, #132974);
   width: 100%;
   height: 100%;
   color: white;
   text-align: right;
-  border: 5px solid #0d1333;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around; }
-  .news h3 {
-    width: 100%;
-    text-align: center;
-    color: #c4aa74;
-    font-size: 3em;
-    padding: 0 10vw; }
+  align-content: flex-end; }
   .news p {
     font-size: 2em;
-    font-family: "Proxima nova", sans-serif;
+    font-family: "Poiret One", cursive;
     color: #fafafa;
-    text-align: center;
+    font-weight: bold;
+    text-align: right;
     width: 100%;
-    padding: 0 10vw; }
+    padding: 20px;
+    background: linear-gradient(90deg, #0d1333, #132974); }
 
 .news-text {
   display: inline-flex;
@@ -1182,7 +1176,11 @@ footer {
   background-size: cover; }
 
 .tape-1041-O {
-  background: url("../media/curtain-tapes-1041O-small.jpg") center no-repeat;
+  background: url("../media/curtain-tapes-1041O-small.jpeg") center no-repeat;
+  background-size: cover; }
+
+.tape-1041-O-back {
+  background: url("../media/curtain-tapes-1041O-small-back.jpeg") center no-repeat;
   background-size: cover; }
 
 .tape-1088-O {
