@@ -258,26 +258,6 @@ header {
     padding: 20px;
     background: linear-gradient(90deg, #0d1333, #132974); }
 
-.news-text {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 65%;
-  height: 100%;
-  padding: 0 50px 0 20px;
-  box-sizing: border-box; }
-  .news-text div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap; }
-  .news-text span {
-    color: #fafafa;
-    font-family: "Proxima nova", sans-serif;
-    font-size: 1.75em;
-    text-align: left;
-    margin: 0 0 1rem 0;
-    text-decoration: none; }
-
 .item-one,
 .item-two,
 .item-three,
@@ -1873,8 +1853,6 @@ footer {
     left: 20%;
     font-size: 1em; }
 
-  .news h3 {
-    font-size: 1.5em; }
   .news p {
     font-size: 1.25em; }
 
@@ -2159,14 +2137,14 @@ footer {
     display: none; }
 
   .news {
-    padding: 10% 0;
-    box-sizing: border-box; }
-    .news h3 {
-      font-size: 1em;
-      margin-bottom: 1em; }
+    padding: 0;
+    box-sizing: border-box;
+    align-content: flex-start; }
     .news p {
       font-size: 1em;
-      margin: 0 .8em .8em 0; }
+      padding: 5px;
+      text-align: center;
+      background: none; }
 
   main .catalogue {
     padding-top: 120px;
@@ -2261,6 +2239,8 @@ footer {
 
   .item-div.bi-padding {
     padding: 50px 0; }
+    .item-div.bi-padding.tape-exclude {
+      padding: 50px 0 100px 0; }
 
   .item-back {
     width: calc(100% - 40px);
@@ -2447,7 +2427,9 @@ footer {
       width: 55%;
       font-size: .9rem; }
     .item-back .item-div-img .item-div-text .table-d.right {
-      font-size: .9rem; } }
+      font-size: .9rem; }
+    .item-back .item-div-img .item-div-text.exclude {
+      bottom: -90%; } }
 @media screen and (max-width: 350px) {
   .item-back .item-div-img .item-div-text .table-r p {
     font-size: 0.9rem; }
